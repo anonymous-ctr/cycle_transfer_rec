@@ -1,0 +1,1267 @@
+auc=0.73716; acc=0.7101500000000001
+pr:	0.044090000000000004 0.02289 0.01371 0.010100000000000001 0.008140000000000001 0.0061200000000000004 0.0044199999999999995
+re:	0.06122000000000001 0.07680000000000001 0.08893000000000001 0.09574 0.10147000000000002 0.11135999999999999 0.12932
+f1:	0.05124000000000001 0.03527 0.023770000000000003 0.01827 0.01507 0.01162 0.008530000000000001
+ndcg:	0.06749999999999999 0.07834999999999999 0.08444 0.08739 0.08946 0.09289 0.09788000000000001
+
+
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING: Logging before flag parsing goes to stderr.
+W0107 18:52:21.404171 140489746269952 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:80: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0107 18:52:21.421595 140489746269952 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:92: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0107 18:52:21.422323 140489746269952 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0107 18:52:21.457323 140489746269952 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/layers.py:40: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0107 18:52:21.508287 140489746269952 deprecation.py:506] From /home/wudong/workspace/MKR/src_org/layers.py:46: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0107 18:52:21.510256 140489746269952 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/util/dispatch.py:180: calling expand_dims (from tensorflow.python.ops.array_ops) with dim is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the `axis` argument instead
+W0107 18:52:21.545948 140489746269952 deprecation.py:323] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0107 18:52:21.566402 140489746269952 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:174: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W0107 18:52:22.453720 140489746269952 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:29: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-01-07 18:52:22.455095: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2020-01-07 18:52:22.465113: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 18:52:22.465326: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 18:52:22.466413: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 18:52:22.467530: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 18:52:22.467788: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 18:52:22.469244: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 18:52:22.470419: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 18:52:22.474220: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 18:52:22.476226: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 18:52:22.476607: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-01-07 18:52:22.590036: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55f44f6e2690 executing computations on platform CUDA. Devices:
+2020-01-07 18:52:22.590100: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-01-07 18:52:22.609517: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100000000 Hz
+2020-01-07 18:52:22.611683: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55f44f7da560 executing computations on platform Host. Devices:
+2020-01-07 18:52:22.611726: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-01-07 18:52:22.613003: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 18:52:22.613061: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 18:52:22.613077: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 18:52:22.613091: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 18:52:22.613105: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 18:52:22.613118: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 18:52:22.613131: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 18:52:22.613145: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 18:52:22.615128: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 18:52:22.615166: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 18:52:22.616750: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-01-07 18:52:22.616764: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-01-07 18:52:22.616771: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-01-07 18:52:22.619331: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14221 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:af:00.0, compute capability: 7.5)
+W0107 18:52:22.622092 140489746269952 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:30: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2020-01-07 18:52:23.926890: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+Namespace(H=1, L=1, batch_size=32, dataset='book', dim=8, gpu_id='1', kge_interval=2, l2_weight=1e-06, lr_kge=2e-05, lr_rs=0.0002, n_epochs=10)
+reading rating file ...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.8154  acc: 0.6389    eval auc: 0.7116  acc: 0.6299    test auc: 0.7192  acc: 0.6321, pre: 0.9244, rec: 0.2865, f1: 0.4374
+precision: 0.0472	0.0246	0.0154	0.0119	0.0100	0.0079	0.0060	
+recall: 0.0663	0.0819	0.0996	0.1135	0.1224	0.1402	0.1669	
+f1: 0.0552	0.0379	0.0267	0.0216	0.0185	0.0150	0.0115	
+ndcg: 0.0882	0.0992	0.1079	0.1134	0.1168	0.1222	0.1294	
+
+epoch 1    train auc: 0.8370  acc: 0.6977    eval auc: 0.7169  acc: 0.6782    test auc: 0.7242  acc: 0.6832, pre: 0.8774, rec: 0.4248, f1: 0.5724
+precision: 0.0469	0.0247	0.0157	0.0119	0.0099	0.0079	0.0059	
+recall: 0.0661	0.0820	0.1006	0.1121	0.1215	0.1391	0.1645	
+f1: 0.0549	0.0380	0.0271	0.0215	0.0182	0.0149	0.0113	
+ndcg: 0.0878	0.0992	0.1082	0.1127	0.1159	0.1220	0.1287	
+
+epoch 2    train auc: 0.8535  acc: 0.7273    eval auc: 0.7255  acc: 0.6959    test auc: 0.7330  acc: 0.7015, pre: 0.8391, rec: 0.4976, f1: 0.6247
+precision: 0.0469	0.0247	0.0155	0.0117	0.0096	0.0074	0.0057	
+recall: 0.0661	0.0820	0.0994	0.1106	0.1172	0.1324	0.1591	
+f1: 0.0549	0.0380	0.0268	0.0212	0.0177	0.0141	0.0110	
+ndcg: 0.0878	0.0992	0.1080	0.1120	0.1147	0.1199	0.1268	
+
+epoch 3    train auc: 0.8631  acc: 0.7437    eval auc: 0.7294  acc: 0.7000    test auc: 0.7375  acc: 0.7089, pre: 0.8124, rec: 0.5421, f1: 0.6503
+precision: 0.0469	0.0245	0.0152	0.0114	0.0094	0.0070	0.0051	
+recall: 0.0661	0.0814	0.0979	0.1069	0.1162	0.1261	0.1469	
+f1: 0.0549	0.0376	0.0263	0.0206	0.0175	0.0133	0.0099	
+ndcg: 0.0710	0.0819	0.0898	0.0939	0.0970	0.1003	0.1061	
+
+epoch 4    train auc: 0.8702  acc: 0.7523    eval auc: 0.7304  acc: 0.7040    test auc: 0.7385  acc: 0.7110, pre: 0.7938, rec: 0.5689, f1: 0.6628
+precision: 0.0165	0.0244	0.0143	0.0108	0.0089	0.0065	0.0047	
+recall: 0.0179	0.0813	0.0919	0.1018	0.1104	0.1175	0.1367	
+f1: 0.0172	0.0375	0.0247	0.0195	0.0165	0.0123	0.0091	
+ndcg: 0.0286	0.0699	0.0753	0.0794	0.0825	0.0852	0.0904	
+
+epoch 5    train auc: 0.8766  acc: 0.7575    eval auc: 0.7301  acc: 0.7038    test auc: 0.7381  acc: 0.7106, pre: 0.7812, rec: 0.5840, f1: 0.6683
+epoch 6    train auc: 0.8827  acc: 0.7670    eval auc: 0.7290  acc: 0.6963    test auc: 0.7369  acc: 0.7037, pre: 0.7557, rec: 0.6006, f1: 0.6693
+epoch 7    train auc: 0.8883  acc: 0.7821    eval auc: 0.7271  acc: 0.6833    test auc: 0.7352  acc: 0.6905, pre: 0.7203, rec: 0.6215, f1: 0.6673
+epoch 8    train auc: 0.8934  acc: 0.7885    eval auc: 0.7246  acc: 0.6734    test auc: 0.7326  acc: 0.6795, pre: 0.6957, rec: 0.6364, f1: 0.6647
+epoch 9    train auc: 0.8975  acc: 0.7916    eval auc: 0.7229  acc: 0.6681    test auc: 0.7308  acc: 0.6746, pre: 0.6834, rec: 0.6486, f1: 0.6655
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING: Logging before flag parsing goes to stderr.
+W0107 19:04:21.705755 139944235128576 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:80: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0107 19:04:21.722782 139944235128576 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:92: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0107 19:04:21.723434 139944235128576 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0107 19:04:21.756771 139944235128576 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/layers.py:40: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0107 19:04:21.805360 139944235128576 deprecation.py:506] From /home/wudong/workspace/MKR/src_org/layers.py:46: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0107 19:04:21.807224 139944235128576 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/util/dispatch.py:180: calling expand_dims (from tensorflow.python.ops.array_ops) with dim is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the `axis` argument instead
+W0107 19:04:21.842374 139944235128576 deprecation.py:323] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0107 19:04:21.862209 139944235128576 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:174: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W0107 19:04:22.719379 139944235128576 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:29: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-01-07 19:04:22.720685: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2020-01-07 19:04:22.730825: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 19:04:22.731000: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 19:04:22.731998: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 19:04:22.733237: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 19:04:22.733532: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 19:04:22.734930: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 19:04:22.736094: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 19:04:22.739852: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 19:04:22.741691: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 19:04:22.742049: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-01-07 19:04:22.864324: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56242ee05210 executing computations on platform CUDA. Devices:
+2020-01-07 19:04:22.864384: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-01-07 19:04:22.885596: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100000000 Hz
+2020-01-07 19:04:22.887701: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56242eefd070 executing computations on platform Host. Devices:
+2020-01-07 19:04:22.887753: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-01-07 19:04:22.889030: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 19:04:22.889086: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 19:04:22.889099: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 19:04:22.889110: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 19:04:22.889122: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 19:04:22.889132: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 19:04:22.889143: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 19:04:22.889155: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 19:04:22.891124: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 19:04:22.891158: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 19:04:22.892594: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-01-07 19:04:22.892607: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-01-07 19:04:22.892624: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-01-07 19:04:22.894911: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14221 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:af:00.0, compute capability: 7.5)
+W0107 19:04:22.897754 139944235128576 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:30: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2020-01-07 19:04:24.255542: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+Namespace(H=1, L=1, batch_size=32, dataset='book', dim=8, gpu_id='1', kge_interval=2, l2_weight=1e-06, lr_kge=2e-05, lr_rs=0.0002, n_epochs=10)
+reading rating file ...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.8245  acc: 0.6454    eval auc: 0.7129  acc: 0.6358    test auc: 0.7179  acc: 0.6370, pre: 0.9157, rec: 0.3006, f1: 0.4526
+precision: 0.0473	0.0247	0.0155	0.0119	0.0100	0.0080	0.0059	
+recall: 0.0659	0.0820	0.0998	0.1134	0.1230	0.1407	0.1651	
+f1: 0.0551	0.0380	0.0268	0.0216	0.0185	0.0151	0.0114	
+ndcg: 0.0882	0.0996	0.1085	0.1136	0.1168	0.1227	0.1294	
+
+epoch 1    train auc: 0.8395  acc: 0.6982    eval auc: 0.7167  acc: 0.6776    test auc: 0.7224  acc: 0.6819, pre: 0.8751, rec: 0.4232, f1: 0.5705
+precision: 0.0484	0.0247	0.0155	0.0119	0.0099	0.0079	0.0059	
+recall: 0.0671	0.0820	0.1003	0.1119	0.1214	0.1395	0.1644	
+f1: 0.0562	0.0380	0.0269	0.0215	0.0183	0.0150	0.0113	
+ndcg: 0.0895	0.0999	0.1087	0.1134	0.1169	0.1229	0.1294	
+
+epoch 2    train auc: 0.8543  acc: 0.7240    eval auc: 0.7240  acc: 0.6938    test auc: 0.7312  acc: 0.6993, pre: 0.8411, rec: 0.4903, f1: 0.6195
+precision: 0.0472	0.0247	0.0154	0.0118	0.0095	0.0074	0.0056	
+recall: 0.0663	0.0819	0.0998	0.1108	0.1172	0.1329	0.1593	
+f1: 0.0552	0.0380	0.0267	0.0213	0.0176	0.0141	0.0109	
+ndcg: 0.0882	0.0992	0.1079	0.1124	0.1150	0.1203	0.1273	
+
+epoch 3    train auc: 0.8637  acc: 0.7437    eval auc: 0.7285  acc: 0.7014    test auc: 0.7360  acc: 0.7065, pre: 0.8070, rec: 0.5416, f1: 0.6482
+precision: 0.0473	0.0245	0.0151	0.0114	0.0094	0.0070	0.0051	
+recall: 0.0663	0.0814	0.0977	0.1072	0.1150	0.1270	0.1460	
+f1: 0.0552	0.0377	0.0261	0.0206	0.0174	0.0134	0.0098	
+ndcg: 0.0879	0.0986	0.1063	0.1106	0.1136	0.1171	0.1228	
+
+epoch 4    train auc: 0.8704  acc: 0.7501    eval auc: 0.7288  acc: 0.7022    test auc: 0.7366  acc: 0.7089, pre: 0.7956, rec: 0.5610, f1: 0.6580
+precision: 0.0473	0.0245	0.0140	0.0101	0.0083	0.0066	0.0047	
+recall: 0.0664	0.0814	0.0913	0.0959	0.1023	0.1200	0.1381	
+f1: 0.0552	0.0377	0.0243	0.0183	0.0153	0.0126	0.0091	
+ndcg: 0.0686	0.0793	0.0842	0.0865	0.0888	0.0943	0.0992	
+
+epoch 5    train auc: 0.8764  acc: 0.7555    eval auc: 0.7290  acc: 0.7044    test auc: 0.7368  acc: 0.7099, pre: 0.7845, rec: 0.5775, f1: 0.6653
+precision: 0.0472	0.0220	0.0132	0.0097	0.0075	0.0057	0.0042	
+recall: 0.0661	0.0743	0.0860	0.0920	0.0947	0.1043	0.1246	
+f1: 0.0551	0.0340	0.0229	0.0175	0.0139	0.0108	0.0082	
+ndcg: 0.0697	0.0759	0.0817	0.0843	0.0853	0.0889	0.0945	
+
+epoch 6    train auc: 0.8821  acc: 0.7597    eval auc: 0.7280  acc: 0.7007    test auc: 0.7356  acc: 0.7068, pre: 0.7711, rec: 0.5870, f1: 0.6666
+epoch 7    train auc: 0.8870  acc: 0.7667    eval auc: 0.7270  acc: 0.6955    test auc: 0.7346  acc: 0.7016, pre: 0.7499, rec: 0.6036, f1: 0.6688
+epoch 8    train auc: 0.8910  acc: 0.7723    eval auc: 0.7256  acc: 0.6918    test auc: 0.7331  acc: 0.6977, pre: 0.7386, rec: 0.6104, f1: 0.6684
+epoch 9    train auc: 0.8942  acc: 0.7781    eval auc: 0.7248  acc: 0.6862    test auc: 0.7322  acc: 0.6932, pre: 0.7263, rec: 0.6187, f1: 0.6682
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING: Logging before flag parsing goes to stderr.
+W0107 19:18:07.734185 140304454141696 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:80: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0107 19:18:07.752548 140304454141696 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:92: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0107 19:18:07.753198 140304454141696 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0107 19:18:07.786590 140304454141696 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/layers.py:40: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0107 19:18:07.834556 140304454141696 deprecation.py:506] From /home/wudong/workspace/MKR/src_org/layers.py:46: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0107 19:18:07.836311 140304454141696 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/util/dispatch.py:180: calling expand_dims (from tensorflow.python.ops.array_ops) with dim is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the `axis` argument instead
+W0107 19:18:07.870361 140304454141696 deprecation.py:323] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0107 19:18:07.889622 140304454141696 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:174: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W0107 19:18:08.742047 140304454141696 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:29: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-01-07 19:18:08.743337: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2020-01-07 19:18:08.753174: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 19:18:08.753365: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 19:18:08.754352: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 19:18:08.755579: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 19:18:08.755853: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 19:18:08.757251: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 19:18:08.758457: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 19:18:08.762187: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 19:18:08.764059: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 19:18:08.764442: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-01-07 19:18:08.868481: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55886fcbc560 executing computations on platform CUDA. Devices:
+2020-01-07 19:18:08.868541: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-01-07 19:18:08.889587: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100000000 Hz
+2020-01-07 19:18:08.892154: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55886fdb43b0 executing computations on platform Host. Devices:
+2020-01-07 19:18:08.892187: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-01-07 19:18:08.893492: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 19:18:08.893555: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 19:18:08.893569: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 19:18:08.893579: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 19:18:08.893590: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 19:18:08.893600: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 19:18:08.893610: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 19:18:08.893621: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 19:18:08.895448: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 19:18:08.895476: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 19:18:08.896860: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-01-07 19:18:08.896872: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-01-07 19:18:08.896879: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-01-07 19:18:08.899146: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14221 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:af:00.0, compute capability: 7.5)
+W0107 19:18:08.901798 140304454141696 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:30: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2020-01-07 19:18:10.278464: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+Namespace(H=1, L=1, batch_size=32, dataset='book', dim=8, gpu_id='1', kge_interval=2, l2_weight=1e-06, lr_kge=2e-05, lr_rs=0.0002, n_epochs=10)
+reading rating file ...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.8046  acc: 0.6281    eval auc: 0.7207  acc: 0.6217    test auc: 0.7256  acc: 0.6231, pre: 0.9333, rec: 0.2639, f1: 0.4114
+precision: 0.0473	0.0255	0.0155	0.0120	0.0099	0.0080	0.0060	
+recall: 0.0659	0.0843	0.1003	0.1135	0.1219	0.1390	0.1665	
+f1: 0.0551	0.0391	0.0269	0.0218	0.0184	0.0151	0.0115	
+ndcg: 0.0883	0.1011	0.1088	0.1138	0.1167	0.1224	0.1296	
+
+epoch 1    train auc: 0.8338  acc: 0.6910    eval auc: 0.7189  acc: 0.6734    test auc: 0.7250  acc: 0.6764, pre: 0.8808, rec: 0.4068, f1: 0.5566
+precision: 0.0473	0.0247	0.0157	0.0118	0.0099	0.0078	0.0059	
+recall: 0.0659	0.0820	0.1008	0.1114	0.1218	0.1379	0.1652	
+f1: 0.0551	0.0380	0.0271	0.0214	0.0184	0.0148	0.0114	
+ndcg: 0.0882	0.0996	0.1087	0.1129	0.1165	0.1221	0.1292	
+
+epoch 2    train auc: 0.8521  acc: 0.7244    eval auc: 0.7258  acc: 0.6943    test auc: 0.7330  acc: 0.7006, pre: 0.8439, rec: 0.4911, f1: 0.6209
+precision: 0.0472	0.0246	0.0154	0.0118	0.0096	0.0076	0.0057	
+recall: 0.0659	0.0819	0.0994	0.1104	0.1186	0.1350	0.1592	
+f1: 0.0550	0.0379	0.0266	0.0213	0.0177	0.0143	0.0110	
+ndcg: 0.0881	0.0994	0.1080	0.1122	0.1150	0.1207	0.1275	
+
+epoch 3    train auc: 0.8619  acc: 0.7392    eval auc: 0.7281  acc: 0.7002    test auc: 0.7360  acc: 0.7055, pre: 0.8167, rec: 0.5289, f1: 0.6420
+precision: 0.0473	0.0246	0.0151	0.0114	0.0094	0.0070	0.0051	
+recall: 0.0659	0.0818	0.0978	0.1069	0.1159	0.1261	0.1458	
+f1: 0.0551	0.0378	0.0262	0.0206	0.0173	0.0133	0.0098	
+ndcg: 0.0679	0.0790	0.0867	0.0908	0.0935	0.0969	0.1028	
+
+epoch 4    train auc: 0.8693  acc: 0.7513    eval auc: 0.7298  acc: 0.7017    test auc: 0.7378  acc: 0.7095, pre: 0.7940, rec: 0.5648, f1: 0.6601
+precision: 0.0475	0.0245	0.0140	0.0109	0.0088	0.0065	0.0047	
+recall: 0.0658	0.0814	0.0914	0.1034	0.1097	0.1183	0.1366	
+f1: 0.0552	0.0377	0.0243	0.0198	0.0164	0.0124	0.0091	
+ndcg: 0.0677	0.0784	0.0833	0.0886	0.0908	0.0936	0.0986	
+
+epoch 5    train auc: 0.8756  acc: 0.7545    eval auc: 0.7295  acc: 0.7017    test auc: 0.7373  acc: 0.7102, pre: 0.7869, rec: 0.5752, f1: 0.6646
+epoch 6    train auc: 0.8812  acc: 0.7602    eval auc: 0.7292  acc: 0.6970    test auc: 0.7367  acc: 0.7059, pre: 0.7672, rec: 0.5899, f1: 0.6670
+epoch 7    train auc: 0.8863  acc: 0.7646    eval auc: 0.7282  acc: 0.6935    test auc: 0.7352  acc: 0.7013, pre: 0.7510, rec: 0.6009, f1: 0.6676
+epoch 8    train auc: 0.8905  acc: 0.7669    eval auc: 0.7258  acc: 0.6909    test auc: 0.7330  acc: 0.6991, pre: 0.7461, rec: 0.6021, f1: 0.6664
+epoch 9    train auc: 0.8935  acc: 0.7763    eval auc: 0.7252  acc: 0.6838    test auc: 0.7319  acc: 0.6905, pre: 0.7244, rec: 0.6134, f1: 0.6643
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING: Logging before flag parsing goes to stderr.
+W0107 19:31:08.381578 140299473659648 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:80: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0107 19:31:08.400428 140299473659648 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:92: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0107 19:31:08.401130 140299473659648 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0107 19:31:08.439571 140299473659648 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/layers.py:40: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0107 19:31:08.494811 140299473659648 deprecation.py:506] From /home/wudong/workspace/MKR/src_org/layers.py:46: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0107 19:31:08.496817 140299473659648 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/util/dispatch.py:180: calling expand_dims (from tensorflow.python.ops.array_ops) with dim is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the `axis` argument instead
+W0107 19:31:08.535595 140299473659648 deprecation.py:323] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0107 19:31:08.557534 140299473659648 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:174: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W0107 19:31:09.534899 140299473659648 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:29: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-01-07 19:31:09.536202: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2020-01-07 19:31:09.545161: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 19:31:09.545373: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 19:31:09.546432: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 19:31:09.547696: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 19:31:09.547975: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 19:31:09.549471: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 19:31:09.550681: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 19:31:09.554675: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 19:31:09.556542: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 19:31:09.556906: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-01-07 19:31:09.745976: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55fd19cb9250 executing computations on platform CUDA. Devices:
+2020-01-07 19:31:09.746026: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-01-07 19:31:09.765504: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100000000 Hz
+2020-01-07 19:31:09.767585: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55fd19db10b0 executing computations on platform Host. Devices:
+2020-01-07 19:31:09.767619: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-01-07 19:31:09.768804: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 19:31:09.768851: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 19:31:09.768864: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 19:31:09.768875: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 19:31:09.768885: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 19:31:09.768896: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 19:31:09.768906: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 19:31:09.768917: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 19:31:09.770679: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 19:31:09.770721: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 19:31:09.772111: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-01-07 19:31:09.772123: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-01-07 19:31:09.772129: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-01-07 19:31:09.774364: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14221 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:af:00.0, compute capability: 7.5)
+W0107 19:31:09.777004 140299473659648 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:30: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2020-01-07 19:31:11.111995: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+Namespace(H=1, L=1, batch_size=32, dataset='book', dim=8, gpu_id='1', kge_interval=2, l2_weight=1e-06, lr_kge=2e-05, lr_rs=0.0002, n_epochs=10)
+reading rating file ...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.8367  acc: 0.6698    eval auc: 0.7265  acc: 0.6574    test auc: 0.7318  acc: 0.6594, pre: 0.8990, rec: 0.3580, f1: 0.5121
+precision: 0.0474	0.0255	0.0154	0.0116	0.0099	0.0079	0.0057	
+recall: 0.0663	0.0843	0.1002	0.1101	0.1221	0.1396	0.1617	
+f1: 0.0553	0.0391	0.0267	0.0210	0.0183	0.0149	0.0111	
+ndcg: 0.0884	0.1013	0.1085	0.1126	0.1168	0.1224	0.1281	
+
+epoch 1    train auc: 0.8369  acc: 0.6867    eval auc: 0.7123  acc: 0.6685    test auc: 0.7189  acc: 0.6738, pre: 0.8864, rec: 0.3975, f1: 0.5489
+precision: 0.0484	0.0255	0.0156	0.0117	0.0098	0.0077	0.0058	
+recall: 0.0670	0.0843	0.1005	0.1098	0.1210	0.1370	0.1644	
+f1: 0.0562	0.0391	0.0271	0.0212	0.0181	0.0146	0.0112	
+ndcg: 0.0896	0.1014	0.1092	0.1130	0.1166	0.1220	0.1294	
+
+epoch 2    train auc: 0.8525  acc: 0.7184    eval auc: 0.7211  acc: 0.6883    test auc: 0.7282  acc: 0.6958, pre: 0.8488, rec: 0.4755, f1: 0.6095
+precision: 0.0473	0.0247	0.0153	0.0116	0.0095	0.0074	0.0056	
+recall: 0.0659	0.0820	0.0991	0.1101	0.1173	0.1331	0.1589	
+f1: 0.0551	0.0379	0.0266	0.0210	0.0176	0.0141	0.0108	
+ndcg: 0.0882	0.0995	0.1080	0.1121	0.1150	0.1202	0.1272	
+
+epoch 3    train auc: 0.8628  acc: 0.7397    eval auc: 0.7265  acc: 0.6993    test auc: 0.7342  acc: 0.7074, pre: 0.8186, rec: 0.5318, f1: 0.6447
+precision: 0.0475	0.0245	0.0151	0.0113	0.0092	0.0070	0.0052	
+recall: 0.0660	0.0814	0.0979	0.1067	0.1144	0.1255	0.1491	
+f1: 0.0552	0.0376	0.0262	0.0204	0.0171	0.0132	0.0100	
+ndcg: 0.0885	0.0990	0.1069	0.1110	0.1135	0.1171	0.1237	
+
+epoch 4    train auc: 0.8697  acc: 0.7508    eval auc: 0.7284  acc: 0.7015    test auc: 0.7364  acc: 0.7089, pre: 0.7953, rec: 0.5616, f1: 0.6583
+precision: 0.0471	0.0245	0.0143	0.0108	0.0087	0.0066	0.0048	
+recall: 0.0660	0.0814	0.0920	0.1018	0.1087	0.1199	0.1388	
+f1: 0.0550	0.0377	0.0247	0.0195	0.0162	0.0125	0.0093	
+ndcg: 0.0678	0.0788	0.0841	0.0882	0.0909	0.0942	0.0998	
+
+epoch 5    train auc: 0.8758  acc: 0.7547    eval auc: 0.7278  acc: 0.7026    test auc: 0.7359  acc: 0.7097, pre: 0.7876, rec: 0.5732, f1: 0.6635
+precision: 0.0471	0.0223	0.0137	0.0098	0.0079	0.0058	0.0043	
+recall: 0.0659	0.0745	0.0886	0.0935	0.0988	0.1059	0.1269	
+f1: 0.0549	0.0343	0.0237	0.0178	0.0146	0.0111	0.0083	
+ndcg: 0.0700	0.0766	0.0835	0.0855	0.0874	0.0902	0.0960	
+
+epoch 6    train auc: 0.8814  acc: 0.7596    eval auc: 0.7271  acc: 0.7017    test auc: 0.7354  acc: 0.7074, pre: 0.7737, rec: 0.5852, f1: 0.6664
+epoch 7    train auc: 0.8864  acc: 0.7660    eval auc: 0.7262  acc: 0.6964    test auc: 0.7345  acc: 0.7025, pre: 0.7543, rec: 0.5993, f1: 0.6679
+epoch 8    train auc: 0.8905  acc: 0.7754    eval auc: 0.7253  acc: 0.6894    test auc: 0.7334  acc: 0.6957, pre: 0.7352, rec: 0.6102, f1: 0.6669
+epoch 9    train auc: 0.8938  acc: 0.7802    eval auc: 0.7247  acc: 0.6847    test auc: 0.7326  acc: 0.6928, pre: 0.7241, rec: 0.6213, f1: 0.6688
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING: Logging before flag parsing goes to stderr.
+W0107 19:45:39.212488 140217137379072 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:80: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0107 19:45:39.229103 140217137379072 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:92: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0107 19:45:39.229763 140217137379072 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0107 19:45:39.262738 140217137379072 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/layers.py:40: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0107 19:45:39.310472 140217137379072 deprecation.py:506] From /home/wudong/workspace/MKR/src_org/layers.py:46: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0107 19:45:39.312213 140217137379072 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/util/dispatch.py:180: calling expand_dims (from tensorflow.python.ops.array_ops) with dim is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the `axis` argument instead
+W0107 19:45:39.345921 140217137379072 deprecation.py:323] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0107 19:45:39.365080 140217137379072 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:174: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W0107 19:45:40.199700 140217137379072 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:29: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-01-07 19:45:40.200966: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2020-01-07 19:45:40.209533: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 19:45:40.209713: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 19:45:40.210717: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 19:45:40.211926: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 19:45:40.212193: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 19:45:40.213638: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 19:45:40.214755: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 19:45:40.218416: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 19:45:40.220179: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 19:45:40.220528: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-01-07 19:45:40.344636: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5564e96eb2f0 executing computations on platform CUDA. Devices:
+2020-01-07 19:45:40.344738: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-01-07 19:45:40.365523: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100000000 Hz
+2020-01-07 19:45:40.367703: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5564e97e3160 executing computations on platform Host. Devices:
+2020-01-07 19:45:40.367753: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-01-07 19:45:40.369056: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 19:45:40.369125: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 19:45:40.369142: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 19:45:40.369156: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 19:45:40.369170: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 19:45:40.369185: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 19:45:40.369199: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 19:45:40.369213: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 19:45:40.371198: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 19:45:40.371236: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 19:45:40.372878: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-01-07 19:45:40.372894: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-01-07 19:45:40.372902: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-01-07 19:45:40.375399: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14221 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:af:00.0, compute capability: 7.5)
+W0107 19:45:40.378118 140217137379072 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:30: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2020-01-07 19:45:41.721383: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+Namespace(H=1, L=1, batch_size=32, dataset='book', dim=8, gpu_id='1', kge_interval=2, l2_weight=1e-06, lr_kge=2e-05, lr_rs=0.0002, n_epochs=10)
+reading rating file ...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.8300  acc: 0.6543    eval auc: 0.7164  acc: 0.6416    test auc: 0.7212  acc: 0.6442, pre: 0.9110, rec: 0.3185, f1: 0.4720
+precision: 0.0470	0.0250	0.0158	0.0120	0.0101	0.0079	0.0059	
+recall: 0.0662	0.0831	0.1015	0.1112	0.1215	0.1387	0.1653	
+f1: 0.0550	0.0385	0.0274	0.0216	0.0186	0.0150	0.0114	
+ndcg: 0.0879	0.1001	0.1088	0.1130	0.1168	0.1221	0.1286	
+
+epoch 1    train auc: 0.8411  acc: 0.7005    eval auc: 0.7173  acc: 0.6810    test auc: 0.7230  acc: 0.6844, pre: 0.8734, rec: 0.4302, f1: 0.5765
+precision: 0.0469	0.0250	0.0158	0.0117	0.0099	0.0079	0.0058	
+recall: 0.0661	0.0832	0.1007	0.1096	0.1201	0.1385	0.1641	
+f1: 0.0549	0.0385	0.0273	0.0211	0.0183	0.0150	0.0113	
+ndcg: 0.0878	0.1000	0.1084	0.1119	0.1160	0.1218	0.1284	
+
+epoch 2    train auc: 0.8540  acc: 0.7254    eval auc: 0.7232  acc: 0.6956    test auc: 0.7296  acc: 0.7015, pre: 0.8416, rec: 0.4953, f1: 0.6236
+precision: 0.0469	0.0247	0.0155	0.0116	0.0095	0.0075	0.0057	
+recall: 0.0661	0.0820	0.0995	0.1093	0.1167	0.1321	0.1597	
+f1: 0.0549	0.0379	0.0268	0.0210	0.0176	0.0142	0.0110	
+ndcg: 0.0878	0.0991	0.1081	0.1117	0.1146	0.1197	0.1270	
+
+epoch 3    train auc: 0.8632  acc: 0.7416    eval auc: 0.7267  acc: 0.6993    test auc: 0.7338  acc: 0.7081, pre: 0.8149, rec: 0.5374, f1: 0.6477
+precision: 0.0469	0.0245	0.0153	0.0114	0.0093	0.0069	0.0050	
+recall: 0.0661	0.0815	0.0980	0.1069	0.1152	0.1245	0.1437	
+f1: 0.0549	0.0376	0.0264	0.0206	0.0172	0.0131	0.0097	
+ndcg: 0.0877	0.0986	0.1066	0.1103	0.1132	0.1161	0.1218	
+
+epoch 4    train auc: 0.8703  acc: 0.7503    eval auc: 0.7282  acc: 0.7017    test auc: 0.7354  acc: 0.7103, pre: 0.7984, rec: 0.5616, f1: 0.6593
+precision: 0.0411	0.0232	0.0144	0.0109	0.0086	0.0065	0.0046	
+recall: 0.0578	0.0780	0.0924	0.1031	0.1062	0.1185	0.1353	
+f1: 0.0480	0.0357	0.0249	0.0197	0.0159	0.0124	0.0090	
+ndcg: 0.0599	0.0744	0.0818	0.0865	0.0878	0.0916	0.0963	
+
+epoch 5    train auc: 0.8765  acc: 0.7545    eval auc: 0.7280  acc: 0.7035    test auc: 0.7353  acc: 0.7109, pre: 0.7891, rec: 0.5745, f1: 0.6649
+precision: 0.0469	0.0217	0.0137	0.0099	0.0079	0.0060	0.0042	
+recall: 0.0661	0.0739	0.0886	0.0938	0.0986	0.1104	0.1243	
+f1: 0.0549	0.0335	0.0237	0.0179	0.0146	0.0115	0.0082	
+ndcg: 0.0752	0.0809	0.0885	0.0905	0.0924	0.0965	0.1004	
+
+epoch 6    train auc: 0.8821  acc: 0.7628    eval auc: 0.7276  acc: 0.7006    test auc: 0.7350  acc: 0.7065, pre: 0.7652, rec: 0.5946, f1: 0.6692
+epoch 7    train auc: 0.8876  acc: 0.7733    eval auc: 0.7259  acc: 0.6918    test auc: 0.7331  acc: 0.6988, pre: 0.7436, rec: 0.6054, f1: 0.6674
+epoch 8    train auc: 0.8923  acc: 0.7861    eval auc: 0.7244  acc: 0.6760    test auc: 0.7315  acc: 0.6840, pre: 0.7090, rec: 0.6225, f1: 0.6630
+epoch 9    train auc: 0.8964  acc: 0.7902    eval auc: 0.7234  acc: 0.6696    test auc: 0.7305  acc: 0.6767, pre: 0.6891, rec: 0.6422, f1: 0.6648
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING: Logging before flag parsing goes to stderr.
+W0107 19:59:30.649976 139678202300160 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:80: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0107 19:59:30.666688 139678202300160 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:92: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0107 19:59:30.667337 139678202300160 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0107 19:59:30.700934 139678202300160 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/layers.py:40: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0107 19:59:30.751739 139678202300160 deprecation.py:506] From /home/wudong/workspace/MKR/src_org/layers.py:46: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0107 19:59:30.753717 139678202300160 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/util/dispatch.py:180: calling expand_dims (from tensorflow.python.ops.array_ops) with dim is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the `axis` argument instead
+W0107 19:59:30.790725 139678202300160 deprecation.py:323] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0107 19:59:30.812084 139678202300160 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:174: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W0107 19:59:31.754502 139678202300160 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:29: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-01-07 19:59:31.755937: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2020-01-07 19:59:31.765204: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 19:59:31.765426: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 19:59:31.766456: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 19:59:31.767784: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 19:59:31.768096: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 19:59:31.769699: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 19:59:31.770899: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 19:59:31.775075: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 19:59:31.777058: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 19:59:31.777435: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-01-07 19:59:31.897844: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55f8df5312b0 executing computations on platform CUDA. Devices:
+2020-01-07 19:59:31.897904: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-01-07 19:59:31.917461: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100000000 Hz
+2020-01-07 19:59:31.919726: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55f8df629100 executing computations on platform Host. Devices:
+2020-01-07 19:59:31.919778: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-01-07 19:59:31.921027: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 19:59:31.921086: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 19:59:31.921099: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 19:59:31.921109: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 19:59:31.921120: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 19:59:31.921130: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 19:59:31.921141: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 19:59:31.921152: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 19:59:31.923173: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 19:59:31.923211: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 19:59:31.924678: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-01-07 19:59:31.924690: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-01-07 19:59:31.924697: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-01-07 19:59:31.927131: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14221 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:af:00.0, compute capability: 7.5)
+W0107 19:59:31.929902 139678202300160 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:30: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2020-01-07 19:59:33.304172: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+Namespace(H=1, L=1, batch_size=32, dataset='book', dim=8, gpu_id='1', kge_interval=2, l2_weight=1e-06, lr_kge=2e-05, lr_rs=0.0002, n_epochs=10)
+reading rating file ...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.8195  acc: 0.6488    eval auc: 0.7141  acc: 0.6377    test auc: 0.7208  acc: 0.6408, pre: 0.9169, rec: 0.3084, f1: 0.4616
+precision: 0.0482	0.0250	0.0156	0.0119	0.0099	0.0079	0.0058	
+recall: 0.0671	0.0831	0.1004	0.1122	0.1230	0.1391	0.1641	
+f1: 0.0561	0.0385	0.0270	0.0215	0.0183	0.0150	0.0113	
+ndcg: 0.0894	0.1008	0.1092	0.1138	0.1173	0.1226	0.1294	
+
+epoch 1    train auc: 0.8373  acc: 0.6958    eval auc: 0.7160  acc: 0.6767    test auc: 0.7227  acc: 0.6810, pre: 0.8776, rec: 0.4194, f1: 0.5676
+precision: 0.0472	0.0247	0.0157	0.0117	0.0098	0.0078	0.0058	
+recall: 0.0663	0.0819	0.1006	0.1109	0.1213	0.1384	0.1642	
+f1: 0.0552	0.0380	0.0272	0.0212	0.0182	0.0148	0.0113	
+ndcg: 0.0882	0.0994	0.1085	0.1126	0.1161	0.1221	0.1288	
+
+epoch 2    train auc: 0.8538  acc: 0.7257    eval auc: 0.7243  acc: 0.6937    test auc: 0.7318  acc: 0.6995, pre: 0.8394, rec: 0.4923, f1: 0.6206
+precision: 0.0472	0.0246	0.0154	0.0116	0.0095	0.0074	0.0056	
+recall: 0.0663	0.0819	0.0998	0.1093	0.1175	0.1331	0.1569	
+f1: 0.0552	0.0379	0.0267	0.0209	0.0176	0.0140	0.0108	
+ndcg: 0.0882	0.0992	0.1081	0.1118	0.1148	0.1202	0.1266	
+
+epoch 3    train auc: 0.8632  acc: 0.7430    eval auc: 0.7274  acc: 0.6993    test auc: 0.7357  acc: 0.7085, pre: 0.8115, rec: 0.5419, f1: 0.6499
+precision: 0.0472	0.0245	0.0151	0.0114	0.0093	0.0069	0.0051	
+recall: 0.0663	0.0814	0.0977	0.1064	0.1159	0.1250	0.1444	
+f1: 0.0552	0.0376	0.0261	0.0205	0.0173	0.0131	0.0098	
+ndcg: 0.0703	0.0809	0.0887	0.0928	0.0958	0.0989	0.1048	
+
+epoch 4    train auc: 0.8700  acc: 0.7525    eval auc: 0.7289  acc: 0.7027    test auc: 0.7376  acc: 0.7103, pre: 0.7923, rec: 0.5689, f1: 0.6622
+precision: 0.0469	0.0236	0.0140	0.0105	0.0088	0.0066	0.0046	
+recall: 0.0657	0.0793	0.0914	0.0990	0.1087	0.1191	0.1327	
+f1: 0.0547	0.0364	0.0243	0.0190	0.0162	0.0125	0.0088	
+ndcg: 0.0674	0.0767	0.0827	0.0865	0.0899	0.0930	0.0973	
+
+epoch 5    train auc: 0.8761  acc: 0.7563    eval auc: 0.7289  acc: 0.7034    test auc: 0.7375  acc: 0.7102, pre: 0.7832, rec: 0.5800, f1: 0.6665
+precision: 0.0469	0.0217	0.0129	0.0098	0.0077	0.0058	0.0042	
+recall: 0.0659	0.0739	0.0844	0.0938	0.0960	0.1049	0.1237	
+f1: 0.0548	0.0335	0.0224	0.0178	0.0142	0.0109	0.0081	
+ndcg: 0.0703	0.0761	0.0815	0.0855	0.0862	0.0895	0.0947	
+
+epoch 6    train auc: 0.8820  acc: 0.7596    eval auc: 0.7278  acc: 0.7005    test auc: 0.7363  acc: 0.7077, pre: 0.7715, rec: 0.5889, f1: 0.6679
+epoch 7    train auc: 0.8869  acc: 0.7656    eval auc: 0.7268  acc: 0.6954    test auc: 0.7351  acc: 0.7032, pre: 0.7532, rec: 0.6031, f1: 0.6698
+epoch 8    train auc: 0.8910  acc: 0.7708    eval auc: 0.7250  acc: 0.6914    test auc: 0.7332  acc: 0.6975, pre: 0.7385, rec: 0.6102, f1: 0.6683
+epoch 9    train auc: 0.8940  acc: 0.7803    eval auc: 0.7240  acc: 0.6808    test auc: 0.7322  acc: 0.6892, pre: 0.7190, rec: 0.6197, f1: 0.6657
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING: Logging before flag parsing goes to stderr.
+W0107 20:14:46.775834 139707939264256 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:80: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0107 20:14:46.794624 139707939264256 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:92: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0107 20:14:46.795318 139707939264256 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0107 20:14:46.833053 139707939264256 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/layers.py:40: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0107 20:14:46.887610 139707939264256 deprecation.py:506] From /home/wudong/workspace/MKR/src_org/layers.py:46: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0107 20:14:46.889690 139707939264256 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/util/dispatch.py:180: calling expand_dims (from tensorflow.python.ops.array_ops) with dim is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the `axis` argument instead
+W0107 20:14:46.928963 139707939264256 deprecation.py:323] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0107 20:14:46.951026 139707939264256 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:174: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W0107 20:14:47.912544 139707939264256 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:29: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-01-07 20:14:47.913867: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2020-01-07 20:14:47.923299: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 20:14:47.923498: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 20:14:47.924656: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 20:14:47.926024: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 20:14:47.926303: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 20:14:47.927756: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 20:14:47.929095: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 20:14:47.933157: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 20:14:47.935141: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 20:14:47.935503: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-01-07 20:14:48.042390: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x560ad932a020 executing computations on platform CUDA. Devices:
+2020-01-07 20:14:48.042451: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-01-07 20:14:48.065565: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100000000 Hz
+2020-01-07 20:14:48.067575: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x560ad9421ea0 executing computations on platform Host. Devices:
+2020-01-07 20:14:48.067614: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-01-07 20:14:48.068905: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 20:14:48.068981: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 20:14:48.068996: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 20:14:48.069009: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 20:14:48.069021: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 20:14:48.069034: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 20:14:48.069046: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 20:14:48.069059: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 20:14:48.071017: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 20:14:48.071057: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 20:14:48.072507: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-01-07 20:14:48.072520: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-01-07 20:14:48.072527: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-01-07 20:14:48.074931: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14221 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:af:00.0, compute capability: 7.5)
+W0107 20:14:48.077585 139707939264256 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:30: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2020-01-07 20:14:49.478330: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+Namespace(H=1, L=1, batch_size=32, dataset='book', dim=8, gpu_id='1', kge_interval=2, l2_weight=1e-06, lr_kge=2e-05, lr_rs=0.0002, n_epochs=10)
+reading rating file ...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.8239  acc: 0.6564    eval auc: 0.7171  acc: 0.6439    test auc: 0.7240  acc: 0.6479, pre: 0.9112, rec: 0.3265, f1: 0.4807
+precision: 0.0470	0.0249	0.0156	0.0120	0.0099	0.0080	0.0059	
+recall: 0.0662	0.0831	0.1009	0.1134	0.1214	0.1394	0.1660	
+f1: 0.0550	0.0383	0.0270	0.0217	0.0183	0.0151	0.0115	
+ndcg: 0.0879	0.0999	0.1081	0.1132	0.1163	0.1224	0.1294	
+
+epoch 1    train auc: 0.8378  acc: 0.6962    eval auc: 0.7175  acc: 0.6778    test auc: 0.7241  acc: 0.6821, pre: 0.8799, rec: 0.4207, f1: 0.5693
+precision: 0.0469	0.0247	0.0155	0.0117	0.0098	0.0077	0.0059	
+recall: 0.0661	0.0819	0.0995	0.1108	0.1207	0.1371	0.1645	
+f1: 0.0549	0.0379	0.0268	0.0212	0.0181	0.0146	0.0113	
+ndcg: 0.0878	0.0990	0.1079	0.1122	0.1157	0.1214	0.1286	
+
+epoch 2    train auc: 0.8545  acc: 0.7294    eval auc: 0.7258  acc: 0.6963    test auc: 0.7332  acc: 0.7033, pre: 0.8358, rec: 0.5049, f1: 0.6295
+precision: 0.0471	0.0246	0.0154	0.0117	0.0096	0.0075	0.0056	
+recall: 0.0662	0.0819	0.0996	0.1094	0.1172	0.1339	0.1572	
+f1: 0.0551	0.0379	0.0267	0.0211	0.0177	0.0142	0.0108	
+ndcg: 0.0881	0.0991	0.1081	0.1120	0.1148	0.1202	0.1265	
+
+epoch 3    train auc: 0.8638  acc: 0.7434    eval auc: 0.7281  acc: 0.7020    test auc: 0.7360  acc: 0.7088, pre: 0.8106, rec: 0.5437, f1: 0.6509
+precision: 0.0472	0.0245	0.0152	0.0113	0.0094	0.0069	0.0051	
+recall: 0.0663	0.0814	0.0982	0.1057	0.1154	0.1244	0.1466	
+f1: 0.0552	0.0376	0.0264	0.0204	0.0173	0.0131	0.0098	
+ndcg: 0.0712	0.0819	0.0901	0.0936	0.0968	0.0997	0.1058	
+
+epoch 4    train auc: 0.8713  acc: 0.7534    eval auc: 0.7285  acc: 0.7024    test auc: 0.7364  acc: 0.7091, pre: 0.7895, rec: 0.5692, f1: 0.6615
+precision: 0.0472	0.0237	0.0142	0.0103	0.0087	0.0065	0.0046	
+recall: 0.0659	0.0793	0.0919	0.0971	0.1076	0.1183	0.1336	
+f1: 0.0550	0.0366	0.0246	0.0186	0.0161	0.0124	0.0088	
+ndcg: 0.0681	0.0774	0.0837	0.0860	0.0898	0.0933	0.0974	
+
+epoch 5    train auc: 0.8780  acc: 0.7687    eval auc: 0.7276  acc: 0.6953    test auc: 0.7354  acc: 0.7009, pre: 0.7531, rec: 0.5965, f1: 0.6657
+epoch 6    train auc: 0.8840  acc: 0.7795    eval auc: 0.7251  acc: 0.6811    test auc: 0.7328  acc: 0.6864, pre: 0.7176, rec: 0.6133, f1: 0.6614
+epoch 7    train auc: 0.8889  acc: 0.7866    eval auc: 0.7230  acc: 0.6717    test auc: 0.7306  acc: 0.6761, pre: 0.6920, rec: 0.6332, f1: 0.6613
+epoch 8    train auc: 0.8933  acc: 0.7916    eval auc: 0.7208  acc: 0.6623    test auc: 0.7285  acc: 0.6674, pre: 0.6735, rec: 0.6478, f1: 0.6604
+epoch 9    train auc: 0.8969  acc: 0.7935    eval auc: 0.7193  acc: 0.6588    test auc: 0.7269  acc: 0.6642, pre: 0.6658, rec: 0.6577, f1: 0.6617
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING: Logging before flag parsing goes to stderr.
+W0107 20:27:11.253892 139818075490048 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:80: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0107 20:27:11.273490 139818075490048 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:92: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0107 20:27:11.274280 139818075490048 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0107 20:27:11.311381 139818075490048 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/layers.py:40: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0107 20:27:11.363053 139818075490048 deprecation.py:506] From /home/wudong/workspace/MKR/src_org/layers.py:46: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0107 20:27:11.364969 139818075490048 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/util/dispatch.py:180: calling expand_dims (from tensorflow.python.ops.array_ops) with dim is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the `axis` argument instead
+W0107 20:27:11.402746 139818075490048 deprecation.py:323] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0107 20:27:11.423570 139818075490048 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:174: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W0107 20:27:12.304312 139818075490048 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:29: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-01-07 20:27:12.305700: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2020-01-07 20:27:12.314646: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 20:27:12.314827: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 20:27:12.315800: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 20:27:12.317036: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 20:27:12.317339: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 20:27:12.318800: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 20:27:12.319959: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 20:27:12.323756: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 20:27:12.325564: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 20:27:12.325996: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-01-07 20:27:12.441194: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55c0e51e93b0 executing computations on platform CUDA. Devices:
+2020-01-07 20:27:12.441245: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-01-07 20:27:12.461490: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100000000 Hz
+2020-01-07 20:27:12.463636: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55c0e52e1210 executing computations on platform Host. Devices:
+2020-01-07 20:27:12.463692: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-01-07 20:27:12.464926: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 20:27:12.464983: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 20:27:12.464996: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 20:27:12.465006: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 20:27:12.465016: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 20:27:12.465026: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 20:27:12.465036: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 20:27:12.465047: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 20:27:12.466767: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 20:27:12.466800: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 20:27:12.468176: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-01-07 20:27:12.468191: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-01-07 20:27:12.468198: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-01-07 20:27:12.470527: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14221 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:af:00.0, compute capability: 7.5)
+W0107 20:27:12.475818 139818075490048 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:30: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2020-01-07 20:27:13.853909: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+Namespace(H=1, L=1, batch_size=32, dataset='book', dim=8, gpu_id='1', kge_interval=2, l2_weight=1e-06, lr_kge=2e-05, lr_rs=0.0002, n_epochs=10)
+reading rating file ...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.8138  acc: 0.6418    eval auc: 0.7148  acc: 0.6327    test auc: 0.7202  acc: 0.6353, pre: 0.9221, rec: 0.2943, f1: 0.4462
+precision: 0.0472	0.0247	0.0157	0.0120	0.0100	0.0080	0.0060	
+recall: 0.0663	0.0819	0.1014	0.1134	0.1231	0.1392	0.1687	
+f1: 0.0552	0.0379	0.0273	0.0216	0.0185	0.0151	0.0116	
+ndcg: 0.0882	0.0993	0.1088	0.1134	0.1166	0.1225	0.1298	
+
+epoch 1    train auc: 0.8414  acc: 0.7064    eval auc: 0.7230  acc: 0.6840    test auc: 0.7285  acc: 0.6895, pre: 0.8667, rec: 0.4468, f1: 0.5897
+precision: 0.0472	0.0247	0.0157	0.0118	0.0099	0.0079	0.0059	
+recall: 0.0663	0.0820	0.1005	0.1117	0.1223	0.1394	0.1657	
+f1: 0.0552	0.0379	0.0272	0.0213	0.0183	0.0149	0.0114	
+ndcg: 0.0882	0.0992	0.1085	0.1126	0.1163	0.1222	0.1290	
+
+epoch 2    train auc: 0.8543  acc: 0.7284    eval auc: 0.7271  acc: 0.6953    test auc: 0.7328  acc: 0.7022, pre: 0.8373, rec: 0.5009, f1: 0.6268
+precision: 0.0471	0.0245	0.0155	0.0116	0.0095	0.0075	0.0056	
+recall: 0.0663	0.0815	0.0995	0.1093	0.1175	0.1340	0.1571	
+f1: 0.0551	0.0376	0.0268	0.0210	0.0176	0.0141	0.0107	
+ndcg: 0.0881	0.0987	0.1081	0.1116	0.1147	0.1201	0.1264	
+
+epoch 3    train auc: 0.8640  acc: 0.7440    eval auc: 0.7300  acc: 0.7011    test auc: 0.7362  acc: 0.7093, pre: 0.8114, rec: 0.5444, f1: 0.6516
+precision: 0.0472	0.0245	0.0151	0.0113	0.0093	0.0069	0.0051	
+recall: 0.0663	0.0814	0.0977	0.1058	0.1144	0.1248	0.1470	
+f1: 0.0552	0.0376	0.0262	0.0204	0.0172	0.0132	0.0098	
+ndcg: 0.0880	0.0986	0.1064	0.1102	0.1129	0.1166	0.1223	
+
+epoch 4    train auc: 0.8714  acc: 0.7517    eval auc: 0.7304  acc: 0.7040    test auc: 0.7369  acc: 0.7111, pre: 0.7949, rec: 0.5679, f1: 0.6625
+precision: 0.0470	0.0237	0.0141	0.0102	0.0082	0.0064	0.0046	
+recall: 0.0660	0.0793	0.0914	0.0961	0.1015	0.1159	0.1339	
+f1: 0.0549	0.0365	0.0245	0.0184	0.0152	0.0121	0.0089	
+ndcg: 0.0678	0.0771	0.0832	0.0857	0.0877	0.0923	0.0973	
+
+epoch 5    train auc: 0.8778  acc: 0.7566    eval auc: 0.7297  acc: 0.7026    test auc: 0.7362  acc: 0.7107, pre: 0.7839, rec: 0.5806, f1: 0.6671
+epoch 6    train auc: 0.8839  acc: 0.7675    eval auc: 0.7284  acc: 0.6944    test auc: 0.7350  acc: 0.7022, pre: 0.7531, rec: 0.6005, f1: 0.6682
+epoch 7    train auc: 0.8892  acc: 0.7834    eval auc: 0.7267  acc: 0.6799    test auc: 0.7333  acc: 0.6866, pre: 0.7127, rec: 0.6236, f1: 0.6652
+epoch 8    train auc: 0.8939  acc: 0.7880    eval auc: 0.7247  acc: 0.6699    test auc: 0.7313  acc: 0.6777, pre: 0.6915, rec: 0.6401, f1: 0.6648
+epoch 9    train auc: 0.8978  acc: 0.7920    eval auc: 0.7234  acc: 0.6637    test auc: 0.7301  acc: 0.6713, pre: 0.6758, rec: 0.6566, f1: 0.6660
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING: Logging before flag parsing goes to stderr.
+W0107 20:39:45.166442 140244677240576 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:80: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0107 20:39:45.183210 140244677240576 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:92: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0107 20:39:45.183846 140244677240576 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0107 20:39:45.216979 140244677240576 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/layers.py:40: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0107 20:39:45.265189 140244677240576 deprecation.py:506] From /home/wudong/workspace/MKR/src_org/layers.py:46: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0107 20:39:45.266962 140244677240576 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/util/dispatch.py:180: calling expand_dims (from tensorflow.python.ops.array_ops) with dim is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the `axis` argument instead
+W0107 20:39:45.300875 140244677240576 deprecation.py:323] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0107 20:39:45.320203 140244677240576 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:174: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W0107 20:39:46.172693 140244677240576 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:29: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-01-07 20:39:46.173950: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2020-01-07 20:39:46.183737: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 20:39:46.183912: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 20:39:46.184885: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 20:39:46.186110: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 20:39:46.186379: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 20:39:46.187784: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 20:39:46.188946: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 20:39:46.192678: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 20:39:46.194506: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 20:39:46.194861: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-01-07 20:39:46.316846: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55759900c150 executing computations on platform CUDA. Devices:
+2020-01-07 20:39:46.316893: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-01-07 20:39:46.337455: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100000000 Hz
+2020-01-07 20:39:46.339520: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x557599103ff0 executing computations on platform Host. Devices:
+2020-01-07 20:39:46.339548: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-01-07 20:39:46.344476: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 20:39:46.344533: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 20:39:46.344549: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 20:39:46.344561: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 20:39:46.344583: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 20:39:46.344596: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 20:39:46.344607: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 20:39:46.344620: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 20:39:46.347775: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 20:39:46.347815: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 20:39:46.350064: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-01-07 20:39:46.350080: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-01-07 20:39:46.350087: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-01-07 20:39:46.353900: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14221 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:af:00.0, compute capability: 7.5)
+W0107 20:39:46.356796 140244677240576 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:30: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2020-01-07 20:39:47.662961: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+Namespace(H=1, L=1, batch_size=32, dataset='book', dim=8, gpu_id='1', kge_interval=2, l2_weight=1e-06, lr_kge=2e-05, lr_rs=0.0002, n_epochs=10)
+reading rating file ...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.8083  acc: 0.6242    eval auc: 0.7124  acc: 0.6175    test auc: 0.7204  acc: 0.6193, pre: 0.9372, rec: 0.2546, f1: 0.4005
+precision: 0.0437	0.0249	0.0156	0.0120	0.0101	0.0080	0.0059	
+recall: 0.0615	0.0831	0.1008	0.1138	0.1239	0.1405	0.1665	
+f1: 0.0511	0.0383	0.0271	0.0218	0.0186	0.0151	0.0114	
+ndcg: 0.0830	0.0978	0.1063	0.1117	0.1150	0.1207	0.1276	
+
+epoch 1    train auc: 0.8376  acc: 0.6954    eval auc: 0.7185  acc: 0.6759    test auc: 0.7266  acc: 0.6810, pre: 0.8776, rec: 0.4194, f1: 0.5676
+precision: 0.0469	0.0247	0.0157	0.0118	0.0099	0.0078	0.0059	
+recall: 0.0661	0.0819	0.1006	0.1112	0.1226	0.1382	0.1657	
+f1: 0.0549	0.0380	0.0272	0.0213	0.0184	0.0148	0.0114	
+ndcg: 0.0878	0.0992	0.1082	0.1124	0.1164	0.1217	0.1291	
+
+epoch 2    train auc: 0.8533  acc: 0.7281    eval auc: 0.7255  acc: 0.6948    test auc: 0.7336  acc: 0.7024, pre: 0.8397, rec: 0.4991, f1: 0.6261
+precision: 0.0469	0.0247	0.0154	0.0118	0.0096	0.0075	0.0057	
+recall: 0.0661	0.0820	0.0998	0.1111	0.1183	0.1337	0.1598	
+f1: 0.0549	0.0380	0.0267	0.0214	0.0178	0.0141	0.0110	
+ndcg: 0.0878	0.0992	0.1078	0.1124	0.1151	0.1203	0.1273	
+
+epoch 3    train auc: 0.8625  acc: 0.7427    eval auc: 0.7283  acc: 0.6995    test auc: 0.7370  acc: 0.7064, pre: 0.8101, rec: 0.5380, f1: 0.6466
+precision: 0.0470	0.0246	0.0151	0.0118	0.0094	0.0070	0.0050	
+recall: 0.0663	0.0817	0.0978	0.1111	0.1159	0.1254	0.1448	
+f1: 0.0550	0.0378	0.0262	0.0214	0.0173	0.0133	0.0097	
+ndcg: 0.0879	0.0990	0.1067	0.1120	0.1137	0.1173	0.1224	
+
+epoch 4    train auc: 0.8696  acc: 0.7504    eval auc: 0.7290  acc: 0.7011    test auc: 0.7382  acc: 0.7086, pre: 0.7951, rec: 0.5608, f1: 0.6577
+precision: 0.0245	0.0238	0.0143	0.0109	0.0088	0.0067	0.0046	
+recall: 0.0281	0.0794	0.0923	0.1035	0.1083	0.1220	0.1356	
+f1: 0.0261	0.0367	0.0247	0.0197	0.0163	0.0127	0.0090	
+ndcg: 0.0395	0.0717	0.0781	0.0831	0.0851	0.0889	0.0931	
+
+epoch 5    train auc: 0.8758  acc: 0.7567    eval auc: 0.7291  acc: 0.7022    test auc: 0.7382  acc: 0.7094, pre: 0.7818, rec: 0.5796, f1: 0.6657
+precision: 0.0473	0.0221	0.0136	0.0097	0.0079	0.0059	0.0044	
+recall: 0.0663	0.0743	0.0885	0.0915	0.0984	0.1077	0.1283	
+f1: 0.0552	0.0341	0.0236	0.0175	0.0146	0.0112	0.0084	
+ndcg: 0.0879	0.0942	0.1011	0.1027	0.1050	0.1083	0.1139	
+
+epoch 6    train auc: 0.8819  acc: 0.7632    eval auc: 0.7275  acc: 0.6972    test auc: 0.7365  acc: 0.7039, pre: 0.7615, rec: 0.5924, f1: 0.6664
+epoch 7    train auc: 0.8874  acc: 0.7795    eval auc: 0.7260  acc: 0.6833    test auc: 0.7349  acc: 0.6911, pre: 0.7241, rec: 0.6161, f1: 0.6657
+epoch 8    train auc: 0.8924  acc: 0.7880    eval auc: 0.7242  acc: 0.6723    test auc: 0.7329  acc: 0.6800, pre: 0.6954, rec: 0.6387, f1: 0.6658
+epoch 9    train auc: 0.8968  acc: 0.7910    eval auc: 0.7225  acc: 0.6659    test auc: 0.7312  acc: 0.6738, pre: 0.6806, rec: 0.6531, f1: 0.6666
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING: Logging before flag parsing goes to stderr.
+W0107 20:53:35.685758 140611427751680 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:80: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0107 20:53:35.703392 140611427751680 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:92: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0107 20:53:35.704110 140611427751680 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0107 20:53:35.739658 140611427751680 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/layers.py:40: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0107 20:53:35.790770 140611427751680 deprecation.py:506] From /home/wudong/workspace/MKR/src_org/layers.py:46: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0107 20:53:35.792626 140611427751680 deprecation.py:506] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/util/dispatch.py:180: calling expand_dims (from tensorflow.python.ops.array_ops) with dim is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the `axis` argument instead
+W0107 20:53:35.828605 140611427751680 deprecation.py:323] From /home/wudong/anaconda3/envs/rec/lib/python3.6/site-packages/tensorflow/python/ops/nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0107 20:53:35.849032 140611427751680 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/model.py:174: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W0107 20:53:36.772957 140611427751680 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:29: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-01-07 20:53:36.774230: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2020-01-07 20:53:36.783821: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 20:53:36.783998: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 20:53:36.785013: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 20:53:36.786271: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 20:53:36.786553: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 20:53:36.787993: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 20:53:36.789154: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 20:53:36.793064: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 20:53:36.794883: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 20:53:36.795260: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-01-07 20:53:36.916169: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55d7a15a7210 executing computations on platform CUDA. Devices:
+2020-01-07 20:53:36.916273: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-01-07 20:53:36.937547: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100000000 Hz
+2020-01-07 20:53:36.939738: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55d7a169f070 executing computations on platform Host. Devices:
+2020-01-07 20:53:36.939769: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-01-07 20:53:36.940994: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:af:00.0
+2020-01-07 20:53:36.941039: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 20:53:36.941051: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-01-07 20:53:36.941060: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-01-07 20:53:36.941070: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-01-07 20:53:36.941080: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-01-07 20:53:36.941089: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-01-07 20:53:36.941100: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-01-07 20:53:36.942765: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-01-07 20:53:36.942795: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-01-07 20:53:36.944103: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-01-07 20:53:36.944113: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-01-07 20:53:36.944120: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-01-07 20:53:36.946294: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14221 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:af:00.0, compute capability: 7.5)
+W0107 20:53:36.948837 140611427751680 deprecation_wrapper.py:119] From /home/wudong/workspace/MKR/src_org/train.py:30: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2020-01-07 20:53:38.205512: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+Namespace(H=1, L=1, batch_size=32, dataset='book', dim=8, gpu_id='1', kge_interval=2, l2_weight=1e-06, lr_kge=2e-05, lr_rs=0.0002, n_epochs=10)
+reading rating file ...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.8156  acc: 0.6330    eval auc: 0.7168  acc: 0.6252    test auc: 0.7238  acc: 0.6264, pre: 0.9287, rec: 0.2726, f1: 0.4215
+precision: 0.0472	0.0249	0.0156	0.0120	0.0100	0.0080	0.0059	
+recall: 0.0663	0.0830	0.1008	0.1133	0.1227	0.1400	0.1660	
+f1: 0.0552	0.0383	0.0269	0.0217	0.0185	0.0151	0.0114	
+ndcg: 0.0882	0.1000	0.1082	0.1134	0.1167	0.1225	0.1294	
+
+epoch 1    train auc: 0.8351  acc: 0.6935    eval auc: 0.7179  acc: 0.6737    test auc: 0.7249  acc: 0.6789, pre: 0.8825, rec: 0.4116, f1: 0.5614
+precision: 0.0472	0.0247	0.0157	0.0119	0.0098	0.0079	0.0059	
+recall: 0.0663	0.0819	0.1006	0.1121	0.1216	0.1391	0.1659	
+f1: 0.0552	0.0379	0.0272	0.0216	0.0181	0.0150	0.0114	
+ndcg: 0.0882	0.0992	0.1085	0.1128	0.1162	0.1222	0.1292	
+
+epoch 2    train auc: 0.8517  acc: 0.7230    eval auc: 0.7253  acc: 0.6915    test auc: 0.7327  acc: 0.6988, pre: 0.8434, rec: 0.4872, f1: 0.6177
+precision: 0.0472	0.0247	0.0154	0.0118	0.0096	0.0074	0.0057	
+recall: 0.0663	0.0820	0.0993	0.1109	0.1191	0.1323	0.1606	
+f1: 0.0552	0.0380	0.0267	0.0213	0.0178	0.0140	0.0110	
+ndcg: 0.0882	0.0994	0.1079	0.1123	0.1154	0.1202	0.1274	
+
+epoch 3    train auc: 0.8619  acc: 0.7438    eval auc: 0.7291  acc: 0.7008    test auc: 0.7377  acc: 0.7069, pre: 0.8093, rec: 0.5403, f1: 0.6480
+precision: 0.0473	0.0245	0.0152	0.0114	0.0095	0.0070	0.0052	
+recall: 0.0663	0.0815	0.0979	0.1073	0.1172	0.1249	0.1483	
+f1: 0.0552	0.0377	0.0263	0.0206	0.0175	0.0132	0.0100	
+ndcg: 0.0712	0.0820	0.0898	0.0940	0.0973	0.1001	0.1066	
+
+epoch 4    train auc: 0.8687  acc: 0.7494    eval auc: 0.7292  acc: 0.7022    test auc: 0.7380  acc: 0.7091, pre: 0.7983, rec: 0.5585, f1: 0.6573
+precision: 0.0167	0.0245	0.0143	0.0111	0.0088	0.0068	0.0047	
+recall: 0.0179	0.0814	0.0920	0.1055	0.1099	0.1224	0.1368	
+f1: 0.0173	0.0376	0.0247	0.0202	0.0164	0.0128	0.0091	
+ndcg: 0.0286	0.0699	0.0753	0.0808	0.0824	0.0864	0.0904	
+
+epoch 5    train auc: 0.8749  acc: 0.7553    eval auc: 0.7294  acc: 0.7038    test auc: 0.7383  acc: 0.7107, pre: 0.7868, rec: 0.5770, f1: 0.6657
+precision: 0.0473	0.0228	0.0134	0.0099	0.0079	0.0061	0.0043	
+recall: 0.0663	0.0758	0.0866	0.0944	0.0990	0.1104	0.1246	
+f1: 0.0552	0.0350	0.0233	0.0179	0.0146	0.0115	0.0082	
+ndcg: 0.0697	0.0770	0.0826	0.0857	0.0875	0.0911	0.0956	
+
+epoch 6    train auc: 0.8807  acc: 0.7600    eval auc: 0.7288  acc: 0.7006    test auc: 0.7377  acc: 0.7083, pre: 0.7727, rec: 0.5892, f1: 0.6685
+epoch 7    train auc: 0.8862  acc: 0.7674    eval auc: 0.7271  acc: 0.6940    test auc: 0.7362  acc: 0.7031, pre: 0.7538, rec: 0.6020, f1: 0.6694
+epoch 8    train auc: 0.8910  acc: 0.7823    eval auc: 0.7253  acc: 0.6803    test auc: 0.7344  acc: 0.6883, pre: 0.7155, rec: 0.6236, f1: 0.6664
+epoch 9    train auc: 0.8951  acc: 0.7879    eval auc: 0.7240  acc: 0.6713    test auc: 0.7330  acc: 0.6804, pre: 0.6961, rec: 0.6386, f1: 0.6661
