@@ -1,0 +1,586 @@
+Namespace(H=1, L=1, batch_size=32, cg_weight=1, dataset='book', debug=True, dim=8, gpu_id='1', kge_interval=3, l2_weight=0.0005, lr_kge=4e-06, lr_rs=4e-05, n_epochs=50, ndcg=False, seed=5)
+reading rating file ...
+Loading datasets splits...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.5915  acc: 0.5524    eval auc: 0.5844  acc: 0.5490    test auc: 0.5863  acc: 0.5533
+epoch 1    train auc: 0.6719  acc: 0.6037    eval auc: 0.6755  acc: 0.6128    test auc: 0.6789  acc: 0.6178
+epoch 2    train auc: 0.6977  acc: 0.5185    eval auc: 0.7022  acc: 0.5245    test auc: 0.7044  acc: 0.5278
+epoch 3    train auc: 0.7132  acc: 0.5038    eval auc: 0.7181  acc: 0.5057    test auc: 0.7195  acc: 0.5082
+epoch 4    train auc: 0.7252  acc: 0.5026    eval auc: 0.7285  acc: 0.5040    test auc: 0.7294  acc: 0.5060
+epoch 5    train auc: 0.7418  acc: 0.5027    eval auc: 0.7360  acc: 0.5041    test auc: 0.7367  acc: 0.5056
+precision: 0.0480	0.0264	0.0166	0.0127	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0886	0.1069	0.1178	0.1275	0.1408	0.1679	
+f1: 0.0565	0.0407	0.0287	0.0229	0.0193	0.0153	0.0117	
+ndcg: 0.0880	0.1022	0.1108	0.1157	0.1191	0.1233	0.1304	
+
+epoch 6    train auc: 0.7633  acc: 0.5146    eval auc: 0.7417  acc: 0.5194    test auc: 0.7424  acc: 0.5226
+precision: 0.0480	0.0264	0.0166	0.0126	0.0104	0.0081	0.0061	
+recall: 0.0689	0.0886	0.1068	0.1182	0.1274	0.1410	0.1684	
+f1: 0.0565	0.0407	0.0288	0.0228	0.0193	0.0152	0.0117	
+ndcg: 0.0880	0.1022	0.1109	0.1156	0.1191	0.1233	0.1305	
+
+epoch 7    train auc: 0.7863  acc: 0.5689    eval auc: 0.7454  acc: 0.5655    test auc: 0.7462  acc: 0.5661
+precision: 0.0481	0.0265	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0887	0.1068	0.1176	0.1274	0.1413	0.1685	
+f1: 0.0566	0.0408	0.0288	0.0228	0.0194	0.0153	0.0117	
+ndcg: 0.0882	0.1023	0.1111	0.1156	0.1194	0.1235	0.1307	
+
+epoch 8    train auc: 0.8044  acc: 0.6715    eval auc: 0.7479  acc: 0.6462    test auc: 0.7491  acc: 0.6453
+precision: 0.0481	0.0265	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0887	0.1068	0.1176	0.1274	0.1413	0.1688	
+f1: 0.0566	0.0408	0.0287	0.0228	0.0194	0.0153	0.0117	
+ndcg: 0.0882	0.1023	0.1111	0.1156	0.1194	0.1235	0.1308	
+
+epoch 9    train auc: 0.8180  acc: 0.7377    eval auc: 0.7499  acc: 0.7028    test auc: 0.7514  acc: 0.7044
+precision: 0.0481	0.0266	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0887	0.1068	0.1176	0.1274	0.1416	0.1704	
+f1: 0.0566	0.0410	0.0287	0.0228	0.0194	0.0153	0.0118	
+ndcg: 0.0882	0.1025	0.1111	0.1156	0.1194	0.1235	0.1308	
+
+epoch 10    train auc: 0.8282  acc: 0.7469    eval auc: 0.7518  acc: 0.7161    test auc: 0.7536  acc: 0.7184
+precision: 0.0482	0.0266	0.0166	0.0126	0.0105	0.0081	0.0062	
+recall: 0.0690	0.0887	0.1068	0.1176	0.1278	0.1426	0.1709	
+f1: 0.0568	0.0410	0.0287	0.0228	0.0195	0.0154	0.0119	
+ndcg: 0.0884	0.1025	0.1111	0.1156	0.1195	0.1238	0.1309	
+
+epoch 11    train auc: 0.8360  acc: 0.7426    eval auc: 0.7534  acc: 0.7142    test auc: 0.7555  acc: 0.7187
+epoch 12    train auc: 0.8418  acc: 0.7354    eval auc: 0.7549  acc: 0.7108    test auc: 0.7572  acc: 0.7144
+epoch 13    train auc: 0.8461  acc: 0.7333    eval auc: 0.7557  acc: 0.7086    test auc: 0.7581  acc: 0.7128
+epoch 14    train auc: 0.8494  acc: 0.7311    eval auc: 0.7564  acc: 0.7079    test auc: 0.7590  acc: 0.7099
+epoch 15    train auc: 0.8520  acc: 0.7303    eval auc: 0.7569  acc: 0.7066    test auc: 0.7596  acc: 0.7086
+epoch 16    train auc: 0.8540  acc: 0.7323    eval auc: 0.7571  acc: 0.7078    test auc: 0.7598  acc: 0.7101
+epoch 17    train auc: 0.8557  acc: 0.7354    eval auc: 0.7571  acc: 0.7100    test auc: 0.7599  acc: 0.7118
+epoch 18    train auc: 0.8572  acc: 0.7356    eval auc: 0.7574  acc: 0.7091    test auc: 0.7603  acc: 0.7111
+epoch 19    train auc: 0.8584  acc: 0.7403    eval auc: 0.7572  acc: 0.7102    test auc: 0.7601  acc: 0.7141
+
+
+
+
+Namespace(H=1, L=1, batch_size=32, cg_weight=1, dataset='book', debug=True, dim=8, gpu_id='1', kge_interval=3, l2_weight=0.0005, lr_kge=4e-06, lr_rs=4e-05, n_epochs=50, ndcg=False, seed=5)
+reading rating file ...
+Loading datasets splits...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.5865  acc: 0.5415    eval auc: 0.5761  acc: 0.5380    test auc: 0.5789  acc: 0.5411
+epoch 1    train auc: 0.6710  acc: 0.6080    eval auc: 0.6753  acc: 0.6170    test auc: 0.6784  acc: 0.6217
+epoch 2    train auc: 0.6971  acc: 0.5125    eval auc: 0.7022  acc: 0.5160    test auc: 0.7041  acc: 0.5193
+epoch 3    train auc: 0.7127  acc: 0.5021    eval auc: 0.7182  acc: 0.5015    test auc: 0.7193  acc: 0.5036
+epoch 4    train auc: 0.7251  acc: 0.5018    eval auc: 0.7287  acc: 0.5008    test auc: 0.7294  acc: 0.5032
+epoch 5    train auc: 0.7424  acc: 0.5024    eval auc: 0.7363  acc: 0.5043    test auc: 0.7368  acc: 0.5060
+precision: 0.0479	0.0264	0.0166	0.0127	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0886	0.1068	0.1178	0.1278	0.1417	0.1680	
+f1: 0.0565	0.0407	0.0288	0.0229	0.0195	0.0153	0.0117	
+ndcg: 0.0878	0.1021	0.1107	0.1156	0.1193	0.1233	0.1303	
+
+epoch 6    train auc: 0.7637  acc: 0.5155    eval auc: 0.7420  acc: 0.5214    test auc: 0.7424  acc: 0.5234
+precision: 0.0479	0.0265	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0887	0.1068	0.1176	0.1275	0.1412	0.1683	
+f1: 0.0565	0.0409	0.0288	0.0228	0.0194	0.0153	0.0117	
+ndcg: 0.0878	0.1023	0.1107	0.1152	0.1191	0.1230	0.1304	
+
+epoch 7    train auc: 0.7867  acc: 0.5780    eval auc: 0.7457  acc: 0.5743    test auc: 0.7462  acc: 0.5732
+precision: 0.0479	0.0265	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0887	0.1061	0.1176	0.1279	0.1415	0.1689	
+f1: 0.0565	0.0409	0.0287	0.0228	0.0195	0.0153	0.0117	
+ndcg: 0.0878	0.1023	0.1106	0.1152	0.1191	0.1231	0.1303	
+
+epoch 8    train auc: 0.8046  acc: 0.6720    eval auc: 0.7480  acc: 0.6460    test auc: 0.7489  acc: 0.6467
+precision: 0.0479	0.0264	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0892	0.1061	0.1176	0.1279	0.1414	0.1692	
+f1: 0.0565	0.0408	0.0287	0.0228	0.0195	0.0153	0.0117	
+ndcg: 0.0878	0.1021	0.1106	0.1152	0.1191	0.1231	0.1304	
+
+epoch 9    train auc: 0.8181  acc: 0.7383    eval auc: 0.7500  acc: 0.7045    test auc: 0.7513  acc: 0.7061
+precision: 0.0479	0.0264	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0892	0.1061	0.1176	0.1279	0.1413	0.1704	
+f1: 0.0565	0.0408	0.0287	0.0228	0.0195	0.0153	0.0118	
+ndcg: 0.0878	0.1021	0.1106	0.1152	0.1191	0.1231	0.1306	
+
+epoch 10    train auc: 0.8283  acc: 0.7459    eval auc: 0.7518  acc: 0.7171    test auc: 0.7536  acc: 0.7188
+precision: 0.0479	0.0264	0.0166	0.0126	0.0105	0.0082	0.0061	
+recall: 0.0689	0.0892	0.1061	0.1175	0.1279	0.1424	0.1709	
+f1: 0.0565	0.0408	0.0287	0.0227	0.0195	0.0155	0.0119	
+ndcg: 0.0878	0.1021	0.1106	0.1151	0.1191	0.1237	0.1306	
+
+epoch 11    train auc: 0.8360  acc: 0.7414    eval auc: 0.7533  acc: 0.7143    test auc: 0.7554  acc: 0.7181
+epoch 12    train auc: 0.8419  acc: 0.7339    eval auc: 0.7549  acc: 0.7096    test auc: 0.7572  acc: 0.7135
+epoch 13    train auc: 0.8461  acc: 0.7320    eval auc: 0.7556  acc: 0.7081    test auc: 0.7581  acc: 0.7119
+epoch 14    train auc: 0.8494  acc: 0.7322    eval auc: 0.7561  acc: 0.7085    test auc: 0.7587  acc: 0.7111
+epoch 15    train auc: 0.8520  acc: 0.7311    eval auc: 0.7566  acc: 0.7070    test auc: 0.7593  acc: 0.7094
+epoch 16    train auc: 0.8540  acc: 0.7322    eval auc: 0.7568  acc: 0.7075    test auc: 0.7597  acc: 0.7100
+epoch 17    train auc: 0.8557  acc: 0.7354    eval auc: 0.7570  acc: 0.7094    test auc: 0.7598  acc: 0.7113
+epoch 18    train auc: 0.8571  acc: 0.7372    eval auc: 0.7571  acc: 0.7098    test auc: 0.7601  acc: 0.7124
+epoch 19    train auc: 0.8584  acc: 0.7398    eval auc: 0.7571  acc: 0.7099    test auc: 0.7601  acc: 0.7136
+
+
+
+
+Namespace(H=1, L=1, batch_size=32, cg_weight=1, dataset='book', debug=True, dim=8, gpu_id='1', kge_interval=3, l2_weight=0.0005, lr_kge=4e-06, lr_rs=4e-05, n_epochs=50, ndcg=False, seed=5)
+reading rating file ...
+Loading datasets splits...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.5857  acc: 0.5575    eval auc: 0.5847  acc: 0.5577    test auc: 0.5854  acc: 0.5574
+epoch 1    train auc: 0.6710  acc: 0.6061    eval auc: 0.6750  acc: 0.6147    test auc: 0.6779  acc: 0.6193
+epoch 2    train auc: 0.6974  acc: 0.5233    eval auc: 0.7023  acc: 0.5310    test auc: 0.7043  acc: 0.5349
+epoch 3    train auc: 0.7130  acc: 0.5021    eval auc: 0.7185  acc: 0.5012    test auc: 0.7195  acc: 0.5039
+epoch 4    train auc: 0.7250  acc: 0.5018    eval auc: 0.7288  acc: 0.5006    test auc: 0.7293  acc: 0.5033
+epoch 5    train auc: 0.7420  acc: 0.5028    eval auc: 0.7363  acc: 0.5049    test auc: 0.7367  acc: 0.5062
+precision: 0.0480	0.0264	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0886	0.1069	0.1178	0.1278	0.1413	0.1672	
+f1: 0.0565	0.0407	0.0288	0.0228	0.0194	0.0153	0.0117	
+ndcg: 0.0880	0.1022	0.1110	0.1153	0.1193	0.1234	0.1304	
+
+epoch 6    train auc: 0.7634  acc: 0.5180    eval auc: 0.7420  acc: 0.5240    test auc: 0.7424  acc: 0.5273
+precision: 0.0480	0.0264	0.0166	0.0126	0.0105	0.0080	0.0061	
+recall: 0.0689	0.0886	0.1069	0.1182	0.1277	0.1411	0.1686	
+f1: 0.0565	0.0407	0.0288	0.0228	0.0194	0.0152	0.0118	
+ndcg: 0.0880	0.1022	0.1110	0.1155	0.1192	0.1231	0.1305	
+
+epoch 7    train auc: 0.7863  acc: 0.5794    eval auc: 0.7456  acc: 0.5757    test auc: 0.7463  acc: 0.5754
+precision: 0.0480	0.0264	0.0166	0.0126	0.0105	0.0080	0.0061	
+recall: 0.0689	0.0886	0.1061	0.1176	0.1278	0.1411	0.1696	
+f1: 0.0565	0.0407	0.0287	0.0228	0.0195	0.0152	0.0118	
+ndcg: 0.0880	0.1022	0.1108	0.1154	0.1193	0.1231	0.1308	
+
+epoch 8    train auc: 0.8044  acc: 0.6765    eval auc: 0.7481  acc: 0.6518    test auc: 0.7490  acc: 0.6511
+precision: 0.0480	0.0265	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0887	0.1061	0.1176	0.1278	0.1415	0.1700	
+f1: 0.0565	0.0409	0.0287	0.0228	0.0194	0.0153	0.0118	
+ndcg: 0.0880	0.1024	0.1108	0.1154	0.1193	0.1233	0.1307	
+
+epoch 9    train auc: 0.8180  acc: 0.7407    eval auc: 0.7502  acc: 0.7073    test auc: 0.7516  acc: 0.7102
+precision: 0.0480	0.0265	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0887	0.1061	0.1176	0.1278	0.1428	0.1698	
+f1: 0.0565	0.0409	0.0287	0.0228	0.0194	0.0154	0.0118	
+ndcg: 0.0880	0.1024	0.1108	0.1154	0.1193	0.1236	0.1307	
+
+epoch 10    train auc: 0.8281  acc: 0.7463    eval auc: 0.7517  acc: 0.7167    test auc: 0.7535  acc: 0.7187
+precision: 0.0480	0.0265	0.0166	0.0126	0.0105	0.0082	0.0062	
+recall: 0.0689	0.0887	0.1061	0.1176	0.1278	0.1433	0.1707	
+f1: 0.0565	0.0409	0.0287	0.0228	0.0195	0.0155	0.0119	
+ndcg: 0.0880	0.1024	0.1108	0.1154	0.1193	0.1240	0.1307	
+
+epoch 11    train auc: 0.8359  acc: 0.7421    eval auc: 0.7533  acc: 0.7148    test auc: 0.7554  acc: 0.7183
+epoch 12    train auc: 0.8417  acc: 0.7350    eval auc: 0.7548  acc: 0.7101    test auc: 0.7571  acc: 0.7136
+epoch 13    train auc: 0.8460  acc: 0.7320    eval auc: 0.7556  acc: 0.7081    test auc: 0.7581  acc: 0.7118
+epoch 14    train auc: 0.8494  acc: 0.7309    eval auc: 0.7562  acc: 0.7076    test auc: 0.7588  acc: 0.7097
+epoch 15    train auc: 0.8520  acc: 0.7299    eval auc: 0.7568  acc: 0.7058    test auc: 0.7594  acc: 0.7079
+epoch 16    train auc: 0.8540  acc: 0.7326    eval auc: 0.7569  acc: 0.7079    test auc: 0.7596  acc: 0.7102
+epoch 17    train auc: 0.8557  acc: 0.7346    eval auc: 0.7571  acc: 0.7088    test auc: 0.7599  acc: 0.7107
+epoch 18    train auc: 0.8571  acc: 0.7373    eval auc: 0.7572  acc: 0.7092    test auc: 0.7601  acc: 0.7123
+epoch 19    train auc: 0.8584  acc: 0.7396    eval auc: 0.7571  acc: 0.7100    test auc: 0.7601  acc: 0.7137
+
+
+
+
+Namespace(H=1, L=1, batch_size=32, cg_weight=1, dataset='book', debug=True, dim=8, gpu_id='1', kge_interval=3, l2_weight=0.0005, lr_kge=4e-06, lr_rs=4e-05, n_epochs=50, ndcg=False, seed=5)
+reading rating file ...
+Loading datasets splits...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.5837  acc: 0.5364    eval auc: 0.5727  acc: 0.5321    test auc: 0.5751  acc: 0.5356
+epoch 1    train auc: 0.6707  acc: 0.5626    eval auc: 0.6743  acc: 0.5713    test auc: 0.6771  acc: 0.5706
+epoch 2    train auc: 0.6966  acc: 0.5064    eval auc: 0.7021  acc: 0.5079    test auc: 0.7038  acc: 0.5102
+epoch 3    train auc: 0.7126  acc: 0.5022    eval auc: 0.7181  acc: 0.5018    test auc: 0.7192  acc: 0.5041
+epoch 4    train auc: 0.7248  acc: 0.5021    eval auc: 0.7286  acc: 0.5025    test auc: 0.7294  acc: 0.5048
+epoch 5    train auc: 0.7419  acc: 0.5043    eval auc: 0.7361  acc: 0.5088    test auc: 0.7367  acc: 0.5101
+precision: 0.0480	0.0264	0.0166	0.0127	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0886	0.1069	0.1178	0.1277	0.1404	0.1683	
+f1: 0.0565	0.0407	0.0288	0.0229	0.0194	0.0152	0.0118	
+ndcg: 0.0880	0.1022	0.1110	0.1156	0.1194	0.1232	0.1305	
+
+epoch 6    train auc: 0.7632  acc: 0.5222    eval auc: 0.7419  acc: 0.5298    test auc: 0.7424  acc: 0.5328
+precision: 0.0479	0.0265	0.0166	0.0126	0.0105	0.0080	0.0061	
+recall: 0.0689	0.0887	0.1062	0.1174	0.1273	0.1411	0.1685	
+f1: 0.0565	0.0409	0.0287	0.0227	0.0193	0.0152	0.0117	
+ndcg: 0.0878	0.1023	0.1108	0.1152	0.1191	0.1230	0.1305	
+
+epoch 7    train auc: 0.7862  acc: 0.5825    eval auc: 0.7456  acc: 0.5794    test auc: 0.7463  acc: 0.5783
+precision: 0.0479	0.0265	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0887	0.1060	0.1174	0.1274	0.1420	0.1687	
+f1: 0.0565	0.0409	0.0286	0.0227	0.0194	0.0153	0.0117	
+ndcg: 0.0878	0.1023	0.1106	0.1152	0.1190	0.1231	0.1305	
+
+epoch 8    train auc: 0.8042  acc: 0.6708    eval auc: 0.7478  acc: 0.6464    test auc: 0.7490  acc: 0.6457
+precision: 0.0479	0.0265	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0887	0.1060	0.1176	0.1278	0.1411	0.1692	
+f1: 0.0565	0.0409	0.0286	0.0228	0.0195	0.0153	0.0118	
+ndcg: 0.0878	0.1023	0.1107	0.1152	0.1191	0.1230	0.1304	
+
+epoch 9    train auc: 0.8178  acc: 0.7395    eval auc: 0.7500  acc: 0.7068    test auc: 0.7515  acc: 0.7083
+precision: 0.0479	0.0265	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0886	0.1060	0.1176	0.1278	0.1411	0.1704	
+f1: 0.0565	0.0408	0.0286	0.0228	0.0195	0.0153	0.0118	
+ndcg: 0.0878	0.1023	0.1107	0.1152	0.1191	0.1230	0.1306	
+
+epoch 10    train auc: 0.8281  acc: 0.7457    eval auc: 0.7518  acc: 0.7172    test auc: 0.7536  acc: 0.7187
+precision: 0.0479	0.0264	0.0166	0.0126	0.0106	0.0081	0.0061	
+recall: 0.0689	0.0891	0.1060	0.1176	0.1278	0.1430	0.1707	
+f1: 0.0565	0.0407	0.0286	0.0228	0.0195	0.0154	0.0119	
+ndcg: 0.0878	0.1021	0.1107	0.1152	0.1191	0.1236	0.1305	
+
+epoch 11    train auc: 0.8358  acc: 0.7414    eval auc: 0.7533  acc: 0.7140    test auc: 0.7554  acc: 0.7184
+epoch 12    train auc: 0.8417  acc: 0.7347    eval auc: 0.7547  acc: 0.7100    test auc: 0.7570  acc: 0.7141
+epoch 13    train auc: 0.8460  acc: 0.7315    eval auc: 0.7556  acc: 0.7081    test auc: 0.7581  acc: 0.7112
+epoch 14    train auc: 0.8493  acc: 0.7302    eval auc: 0.7562  acc: 0.7066    test auc: 0.7587  acc: 0.7092
+epoch 15    train auc: 0.8519  acc: 0.7304    eval auc: 0.7566  acc: 0.7064    test auc: 0.7593  acc: 0.7085
+epoch 16    train auc: 0.8540  acc: 0.7312    eval auc: 0.7569  acc: 0.7064    test auc: 0.7597  acc: 0.7084
+epoch 17    train auc: 0.8557  acc: 0.7342    eval auc: 0.7570  acc: 0.7086    test auc: 0.7598  acc: 0.7100
+epoch 18    train auc: 0.8571  acc: 0.7363    eval auc: 0.7572  acc: 0.7090    test auc: 0.7600  acc: 0.7116
+epoch 19    train auc: 0.8583  acc: 0.7401    eval auc: 0.7571  acc: 0.7097    test auc: 0.7600  acc: 0.7137
+
+
+
+
+Namespace(H=1, L=1, batch_size=32, cg_weight=1, dataset='book', debug=True, dim=8, gpu_id='1', kge_interval=3, l2_weight=0.0005, lr_kge=4e-06, lr_rs=4e-05, n_epochs=50, ndcg=False, seed=5)
+reading rating file ...
+Loading datasets splits...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.5827  acc: 0.5340    eval auc: 0.5676  acc: 0.5294    test auc: 0.5713  acc: 0.5312
+epoch 1    train auc: 0.6715  acc: 0.5641    eval auc: 0.6748  acc: 0.5741    test auc: 0.6776  acc: 0.5720
+epoch 2    train auc: 0.6972  acc: 0.5107    eval auc: 0.7021  acc: 0.5146    test auc: 0.7040  acc: 0.5175
+epoch 3    train auc: 0.7129  acc: 0.5020    eval auc: 0.7182  acc: 0.5008    test auc: 0.7194  acc: 0.5033
+epoch 4    train auc: 0.7250  acc: 0.5021    eval auc: 0.7285  acc: 0.5026    test auc: 0.7294  acc: 0.5051
+epoch 5    train auc: 0.7417  acc: 0.5029    eval auc: 0.7361  acc: 0.5053    test auc: 0.7366  acc: 0.5066
+precision: 0.0480	0.0264	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0886	0.1067	0.1182	0.1278	0.1415	0.1680	
+f1: 0.0565	0.0407	0.0287	0.0228	0.0195	0.0153	0.0117	
+ndcg: 0.0880	0.1022	0.1109	0.1155	0.1195	0.1234	0.1304	
+
+epoch 6    train auc: 0.7627  acc: 0.5148    eval auc: 0.7418  acc: 0.5207    test auc: 0.7423  acc: 0.5231
+precision: 0.0481	0.0266	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0887	0.1068	0.1182	0.1275	0.1412	0.1682	
+f1: 0.0566	0.0410	0.0288	0.0228	0.0194	0.0153	0.0117	
+ndcg: 0.0882	0.1025	0.1111	0.1157	0.1195	0.1234	0.1307	
+
+epoch 7    train auc: 0.7856  acc: 0.5611    eval auc: 0.7455  acc: 0.5584    test auc: 0.7461  acc: 0.5578
+precision: 0.0481	0.0266	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0887	0.1061	0.1176	0.1275	0.1413	0.1688	
+f1: 0.0566	0.0410	0.0288	0.0228	0.0194	0.0153	0.0117	
+ndcg: 0.0882	0.1025	0.1110	0.1156	0.1194	0.1234	0.1306	
+
+epoch 8    train auc: 0.8038  acc: 0.6645    eval auc: 0.7479  acc: 0.6398    test auc: 0.7489  acc: 0.6393
+precision: 0.0482	0.0266	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0690	0.0887	0.1061	0.1176	0.1278	0.1412	0.1695	
+f1: 0.0568	0.0410	0.0288	0.0228	0.0194	0.0153	0.0117	
+ndcg: 0.0884	0.1025	0.1110	0.1156	0.1195	0.1234	0.1306	
+
+epoch 9    train auc: 0.8175  acc: 0.7370    eval auc: 0.7500  acc: 0.7021    test auc: 0.7513  acc: 0.7045
+precision: 0.0482	0.0266	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0690	0.0887	0.1061	0.1175	0.1278	0.1411	0.1704	
+f1: 0.0568	0.0410	0.0288	0.0227	0.0194	0.0152	0.0118	
+ndcg: 0.0884	0.1025	0.1110	0.1155	0.1195	0.1233	0.1309	
+
+epoch 10    train auc: 0.8279  acc: 0.7465    eval auc: 0.7518  acc: 0.7162    test auc: 0.7536  acc: 0.7188
+precision: 0.0482	0.0266	0.0166	0.0126	0.0106	0.0081	0.0061	
+recall: 0.0690	0.0887	0.1061	0.1175	0.1279	0.1432	0.1709	
+f1: 0.0568	0.0409	0.0287	0.0227	0.0195	0.0154	0.0119	
+ndcg: 0.0884	0.1026	0.1110	0.1155	0.1195	0.1239	0.1310	
+
+epoch 11    train auc: 0.8357  acc: 0.7431    eval auc: 0.7534  acc: 0.7143    test auc: 0.7555  acc: 0.7186
+epoch 12    train auc: 0.8416  acc: 0.7349    eval auc: 0.7549  acc: 0.7099    test auc: 0.7573  acc: 0.7146
+epoch 13    train auc: 0.8460  acc: 0.7322    eval auc: 0.7558  acc: 0.7085    test auc: 0.7583  acc: 0.7123
+epoch 14    train auc: 0.8493  acc: 0.7310    eval auc: 0.7563  acc: 0.7080    test auc: 0.7589  acc: 0.7102
+epoch 15    train auc: 0.8519  acc: 0.7302    eval auc: 0.7568  acc: 0.7059    test auc: 0.7595  acc: 0.7085
+epoch 16    train auc: 0.8539  acc: 0.7320    eval auc: 0.7570  acc: 0.7072    test auc: 0.7598  acc: 0.7098
+epoch 17    train auc: 0.8556  acc: 0.7339    eval auc: 0.7571  acc: 0.7086    test auc: 0.7600  acc: 0.7106
+epoch 18    train auc: 0.8571  acc: 0.7363    eval auc: 0.7573  acc: 0.7089    test auc: 0.7602  acc: 0.7116
+epoch 19    train auc: 0.8583  acc: 0.7397    eval auc: 0.7572  acc: 0.7095    test auc: 0.7602  acc: 0.7134
+
+
+
+
+Namespace(H=1, L=1, batch_size=32, cg_weight=1, dataset='book', debug=True, dim=8, gpu_id='1', kge_interval=3, l2_weight=0.0005, lr_kge=4e-06, lr_rs=4e-05, n_epochs=50, ndcg=False, seed=5)
+reading rating file ...
+Loading datasets splits...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.5875  acc: 0.5543    eval auc: 0.5881  acc: 0.5560    test auc: 0.5899  acc: 0.5579
+epoch 1    train auc: 0.6702  acc: 0.5784    eval auc: 0.6748  acc: 0.5895    test auc: 0.6775  acc: 0.5865
+epoch 2    train auc: 0.6972  acc: 0.5225    eval auc: 0.7023  acc: 0.5300    test auc: 0.7044  acc: 0.5331
+epoch 3    train auc: 0.7128  acc: 0.5029    eval auc: 0.7182  acc: 0.5037    test auc: 0.7194  acc: 0.5064
+epoch 4    train auc: 0.7247  acc: 0.5020    eval auc: 0.7285  acc: 0.5025    test auc: 0.7293  acc: 0.5051
+epoch 5    train auc: 0.7413  acc: 0.5037    eval auc: 0.7360  acc: 0.5074    test auc: 0.7366  acc: 0.5085
+precision: 0.0479	0.0265	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0887	0.1069	0.1181	0.1278	0.1413	0.1682	
+f1: 0.0565	0.0409	0.0288	0.0227	0.0194	0.0153	0.0117	
+ndcg: 0.0878	0.1023	0.1108	0.1152	0.1192	0.1232	0.1302	
+
+epoch 6    train auc: 0.7625  acc: 0.5145    eval auc: 0.7416  acc: 0.5211    test auc: 0.7422  acc: 0.5234
+precision: 0.0479	0.0264	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0892	0.1062	0.1174	0.1278	0.1413	0.1686	
+f1: 0.0565	0.0408	0.0287	0.0227	0.0194	0.0153	0.0117	
+ndcg: 0.0878	0.1021	0.1108	0.1153	0.1193	0.1231	0.1304	
+
+epoch 7    train auc: 0.7856  acc: 0.5717    eval auc: 0.7453  acc: 0.5692    test auc: 0.7461  acc: 0.5685
+precision: 0.0479	0.0264	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0892	0.1060	0.1174	0.1278	0.1408	0.1693	
+f1: 0.0565	0.0408	0.0286	0.0227	0.0194	0.0152	0.0117	
+ndcg: 0.0878	0.1021	0.1106	0.1152	0.1191	0.1228	0.1304	
+
+epoch 8    train auc: 0.8038  acc: 0.6691    eval auc: 0.7478  acc: 0.6443    test auc: 0.7489  acc: 0.6446
+precision: 0.0481	0.0264	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0690	0.0892	0.1060	0.1176	0.1278	0.1412	0.1706	
+f1: 0.0567	0.0408	0.0286	0.0228	0.0194	0.0153	0.0118	
+ndcg: 0.0883	0.1024	0.1109	0.1155	0.1194	0.1233	0.1310	
+
+epoch 9    train auc: 0.8174  acc: 0.7369    eval auc: 0.7499  acc: 0.7029    test auc: 0.7513  acc: 0.7044
+precision: 0.0481	0.0264	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0690	0.0892	0.1060	0.1176	0.1278	0.1411	0.1704	
+f1: 0.0567	0.0408	0.0286	0.0228	0.0195	0.0152	0.0118	
+ndcg: 0.0883	0.1024	0.1110	0.1155	0.1193	0.1232	0.1308	
+
+epoch 10    train auc: 0.8278  acc: 0.7466    eval auc: 0.7517  acc: 0.7167    test auc: 0.7535  acc: 0.7182
+precision: 0.0481	0.0264	0.0166	0.0126	0.0106	0.0081	0.0061	
+recall: 0.0690	0.0891	0.1060	0.1176	0.1279	0.1428	0.1706	
+f1: 0.0567	0.0407	0.0286	0.0228	0.0195	0.0154	0.0118	
+ndcg: 0.0883	0.1024	0.1110	0.1154	0.1194	0.1237	0.1308	
+
+epoch 11    train auc: 0.8356  acc: 0.7419    eval auc: 0.7534  acc: 0.7147    test auc: 0.7555  acc: 0.7189
+epoch 12    train auc: 0.8415  acc: 0.7355    eval auc: 0.7549  acc: 0.7108    test auc: 0.7571  acc: 0.7142
+epoch 13    train auc: 0.8459  acc: 0.7327    eval auc: 0.7557  acc: 0.7093    test auc: 0.7582  acc: 0.7120
+epoch 14    train auc: 0.8492  acc: 0.7309    eval auc: 0.7564  acc: 0.7080    test auc: 0.7589  acc: 0.7103
+epoch 15    train auc: 0.8518  acc: 0.7305    eval auc: 0.7568  acc: 0.7071    test auc: 0.7595  acc: 0.7096
+epoch 16    train auc: 0.8539  acc: 0.7318    eval auc: 0.7571  acc: 0.7079    test auc: 0.7597  acc: 0.7100
+epoch 17    train auc: 0.8556  acc: 0.7340    eval auc: 0.7572  acc: 0.7085    test auc: 0.7600  acc: 0.7101
+epoch 18    train auc: 0.8570  acc: 0.7366    eval auc: 0.7573  acc: 0.7091    test auc: 0.7602  acc: 0.7118
+epoch 19    train auc: 0.8583  acc: 0.7397    eval auc: 0.7573  acc: 0.7102    test auc: 0.7602  acc: 0.7135
+
+
+
+
+Namespace(H=1, L=1, batch_size=32, cg_weight=1, dataset='book', debug=True, dim=8, gpu_id='1', kge_interval=3, l2_weight=0.0005, lr_kge=4e-06, lr_rs=4e-05, n_epochs=50, ndcg=False, seed=5)
+reading rating file ...
+Loading datasets splits...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.5883  acc: 0.5545    eval auc: 0.5808  acc: 0.5496    test auc: 0.5834  acc: 0.5530
+epoch 1    train auc: 0.6701  acc: 0.5501    eval auc: 0.6744  acc: 0.5586    test auc: 0.6776  acc: 0.5584
+epoch 2    train auc: 0.6971  acc: 0.5136    eval auc: 0.7019  acc: 0.5179    test auc: 0.7042  acc: 0.5216
+epoch 3    train auc: 0.7127  acc: 0.5028    eval auc: 0.7182  acc: 0.5031    test auc: 0.7197  acc: 0.5053
+epoch 4    train auc: 0.7247  acc: 0.5020    eval auc: 0.7283  acc: 0.5017    test auc: 0.7295  acc: 0.5045
+epoch 5    train auc: 0.7413  acc: 0.5027    eval auc: 0.7358  acc: 0.5048    test auc: 0.7367  acc: 0.5065
+precision: 0.0479	0.0265	0.0166	0.0126	0.0105	0.0081	0.0060	
+recall: 0.0689	0.0887	0.1069	0.1182	0.1277	0.1410	0.1658	
+f1: 0.0565	0.0409	0.0288	0.0229	0.0195	0.0153	0.0116	
+ndcg: 0.0878	0.1023	0.1109	0.1153	0.1192	0.1232	0.1299	
+
+epoch 6    train auc: 0.7626  acc: 0.5189    eval auc: 0.7416  acc: 0.5255    test auc: 0.7426  acc: 0.5281
+precision: 0.0481	0.0264	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0690	0.0892	0.1069	0.1182	0.1276	0.1410	0.1687	
+f1: 0.0567	0.0408	0.0288	0.0228	0.0194	0.0152	0.0118	
+ndcg: 0.0883	0.1024	0.1111	0.1156	0.1194	0.1233	0.1307	
+
+epoch 7    train auc: 0.7856  acc: 0.5720    eval auc: 0.7453  acc: 0.5693    test auc: 0.7463  acc: 0.5687
+precision: 0.0481	0.0264	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0690	0.0892	0.1068	0.1177	0.1275	0.1414	0.1693	
+f1: 0.0567	0.0408	0.0287	0.0228	0.0194	0.0153	0.0118	
+ndcg: 0.0883	0.1024	0.1110	0.1156	0.1194	0.1234	0.1308	
+
+epoch 8    train auc: 0.8038  acc: 0.6707    eval auc: 0.7478  acc: 0.6457    test auc: 0.7491  acc: 0.6456
+precision: 0.0481	0.0264	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0690	0.0891	0.1061	0.1177	0.1269	0.1419	0.1693	
+f1: 0.0567	0.0407	0.0287	0.0228	0.0194	0.0154	0.0118	
+ndcg: 0.0883	0.1024	0.1109	0.1156	0.1193	0.1236	0.1307	
+
+epoch 9    train auc: 0.8175  acc: 0.7388    eval auc: 0.7500  acc: 0.7057    test auc: 0.7516  acc: 0.7080
+precision: 0.0481	0.0264	0.0166	0.0126	0.0105	0.0082	0.0062	
+recall: 0.0690	0.0891	0.1061	0.1176	0.1279	0.1430	0.1706	
+f1: 0.0567	0.0407	0.0287	0.0228	0.0194	0.0155	0.0119	
+ndcg: 0.0883	0.1024	0.1109	0.1155	0.1195	0.1239	0.1309	
+
+epoch 10    train auc: 0.8278  acc: 0.7463    eval auc: 0.7517  acc: 0.7168    test auc: 0.7537  acc: 0.7189
+precision: 0.0481	0.0264	0.0166	0.0126	0.0105	0.0082	0.0061	
+recall: 0.0690	0.0891	0.1061	0.1176	0.1279	0.1427	0.1706	
+f1: 0.0567	0.0407	0.0287	0.0228	0.0194	0.0154	0.0119	
+ndcg: 0.0883	0.1024	0.1109	0.1155	0.1195	0.1240	0.1309	
+
+epoch 11    train auc: 0.8357  acc: 0.7410    eval auc: 0.7534  acc: 0.7143    test auc: 0.7556  acc: 0.7183
+epoch 12    train auc: 0.8416  acc: 0.7338    eval auc: 0.7549  acc: 0.7094    test auc: 0.7574  acc: 0.7132
+epoch 13    train auc: 0.8460  acc: 0.7317    eval auc: 0.7557  acc: 0.7082    test auc: 0.7583  acc: 0.7113
+epoch 14    train auc: 0.8492  acc: 0.7316    eval auc: 0.7561  acc: 0.7083    test auc: 0.7589  acc: 0.7110
+epoch 15    train auc: 0.8519  acc: 0.7307    eval auc: 0.7566  acc: 0.7068    test auc: 0.7595  acc: 0.7092
+epoch 16    train auc: 0.8539  acc: 0.7323    eval auc: 0.7569  acc: 0.7073    test auc: 0.7597  acc: 0.7103
+epoch 17    train auc: 0.8556  acc: 0.7340    eval auc: 0.7571  acc: 0.7084    test auc: 0.7600  acc: 0.7103
+epoch 18    train auc: 0.8571  acc: 0.7364    eval auc: 0.7572  acc: 0.7089    test auc: 0.7602  acc: 0.7115
+epoch 19    train auc: 0.8583  acc: 0.7395    eval auc: 0.7572  acc: 0.7095    test auc: 0.7602  acc: 0.7131
+
+
+
+
+Namespace(H=1, L=1, batch_size=32, cg_weight=1, dataset='book', debug=True, dim=8, gpu_id='1', kge_interval=3, l2_weight=0.0005, lr_kge=4e-06, lr_rs=4e-05, n_epochs=50, ndcg=False, seed=5)
+reading rating file ...
+Loading datasets splits...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.5850  acc: 0.5515    eval auc: 0.5827  acc: 0.5492    test auc: 0.5839  acc: 0.5534
+epoch 1    train auc: 0.6709  acc: 0.5848    eval auc: 0.6746  acc: 0.5955    test auc: 0.6774  acc: 0.5970
+epoch 2    train auc: 0.6972  acc: 0.5227    eval auc: 0.7021  acc: 0.5308    test auc: 0.7041  acc: 0.5337
+epoch 3    train auc: 0.7128  acc: 0.5044    eval auc: 0.7180  acc: 0.5066    test auc: 0.7193  acc: 0.5092
+epoch 4    train auc: 0.7247  acc: 0.5029    eval auc: 0.7285  acc: 0.5051    test auc: 0.7293  acc: 0.5076
+epoch 5    train auc: 0.7413  acc: 0.5046    eval auc: 0.7360  acc: 0.5097    test auc: 0.7367  acc: 0.5109
+precision: 0.0480	0.0264	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0886	0.1067	0.1178	0.1275	0.1417	0.1684	
+f1: 0.0565	0.0407	0.0287	0.0228	0.0193	0.0153	0.0118	
+ndcg: 0.0880	0.1022	0.1109	0.1156	0.1191	0.1234	0.1305	
+
+epoch 6    train auc: 0.7625  acc: 0.5185    eval auc: 0.7416  acc: 0.5256    test auc: 0.7424  acc: 0.5292
+precision: 0.0480	0.0265	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0887	0.1067	0.1182	0.1275	0.1413	0.1686	
+f1: 0.0565	0.0409	0.0287	0.0228	0.0194	0.0153	0.0117	
+ndcg: 0.0880	0.1024	0.1108	0.1155	0.1192	0.1232	0.1307	
+
+epoch 7    train auc: 0.7855  acc: 0.5736    eval auc: 0.7454  acc: 0.5703    test auc: 0.7463  acc: 0.5697
+precision: 0.0480	0.0265	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0887	0.1068	0.1176	0.1274	0.1414	0.1691	
+f1: 0.0565	0.0409	0.0288	0.0228	0.0194	0.0153	0.0117	
+ndcg: 0.0880	0.1024	0.1109	0.1154	0.1191	0.1233	0.1305	
+
+epoch 8    train auc: 0.8038  acc: 0.6763    eval auc: 0.7479  acc: 0.6521    test auc: 0.7491  acc: 0.6527
+precision: 0.0480	0.0265	0.0166	0.0126	0.0105	0.0080	0.0061	
+recall: 0.0689	0.0886	0.1067	0.1176	0.1274	0.1409	0.1700	
+f1: 0.0565	0.0408	0.0287	0.0228	0.0194	0.0152	0.0118	
+ndcg: 0.0880	0.1025	0.1109	0.1154	0.1192	0.1231	0.1307	
+
+epoch 9    train auc: 0.8177  acc: 0.7408    eval auc: 0.7502  acc: 0.7086    test auc: 0.7517  acc: 0.7119
+precision: 0.0480	0.0265	0.0166	0.0126	0.0106	0.0081	0.0061	
+recall: 0.0689	0.0886	0.1068	0.1176	0.1278	0.1412	0.1706	
+f1: 0.0565	0.0408	0.0288	0.0228	0.0195	0.0153	0.0119	
+ndcg: 0.0880	0.1025	0.1109	0.1154	0.1192	0.1232	0.1307	
+
+epoch 10    train auc: 0.8279  acc: 0.7453    eval auc: 0.7520  acc: 0.7170    test auc: 0.7537  acc: 0.7183
+precision: 0.0481	0.0266	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0887	0.1061	0.1176	0.1267	0.1412	0.1706	
+f1: 0.0566	0.0409	0.0287	0.0228	0.0193	0.0153	0.0118	
+ndcg: 0.0882	0.1026	0.1110	0.1156	0.1191	0.1234	0.1309	
+
+epoch 11    train auc: 0.8357  acc: 0.7411    eval auc: 0.7535  acc: 0.7142    test auc: 0.7556  acc: 0.7182
+epoch 12    train auc: 0.8415  acc: 0.7355    eval auc: 0.7548  acc: 0.7107    test auc: 0.7571  acc: 0.7146
+epoch 13    train auc: 0.8459  acc: 0.7323    eval auc: 0.7558  acc: 0.7089    test auc: 0.7582  acc: 0.7120
+epoch 14    train auc: 0.8492  acc: 0.7316    eval auc: 0.7562  acc: 0.7089    test auc: 0.7588  acc: 0.7103
+epoch 15    train auc: 0.8518  acc: 0.7307    eval auc: 0.7568  acc: 0.7072    test auc: 0.7594  acc: 0.7092
+epoch 16    train auc: 0.8539  acc: 0.7321    eval auc: 0.7570  acc: 0.7080    test auc: 0.7598  acc: 0.7097
+epoch 17    train auc: 0.8556  acc: 0.7338    eval auc: 0.7572  acc: 0.7084    test auc: 0.7600  acc: 0.7103
+epoch 18    train auc: 0.8570  acc: 0.7366    eval auc: 0.7573  acc: 0.7089    test auc: 0.7602  acc: 0.7119
+epoch 19    train auc: 0.8583  acc: 0.7392    eval auc: 0.7573  acc: 0.7093    test auc: 0.7602  acc: 0.7129
+
+
+
+
+Namespace(H=1, L=1, batch_size=32, cg_weight=1, dataset='book', debug=True, dim=8, gpu_id='1', kge_interval=3, l2_weight=0.0005, lr_kge=4e-06, lr_rs=4e-05, n_epochs=50, ndcg=False, seed=5)
+reading rating file ...
+Loading datasets splits...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.5790  acc: 0.5344    eval auc: 0.5794  acc: 0.5327    test auc: 0.5799  acc: 0.5349
+epoch 1    train auc: 0.6704  acc: 0.5912    eval auc: 0.6748  acc: 0.6025    test auc: 0.6774  acc: 0.6054
+epoch 2    train auc: 0.6971  acc: 0.5299    eval auc: 0.7021  acc: 0.5415    test auc: 0.7040  acc: 0.5427
+epoch 3    train auc: 0.7130  acc: 0.5045    eval auc: 0.7183  acc: 0.5069    test auc: 0.7193  acc: 0.5093
+epoch 4    train auc: 0.7250  acc: 0.5023    eval auc: 0.7284  acc: 0.5032    test auc: 0.7292  acc: 0.5057
+epoch 5    train auc: 0.7415  acc: 0.5039    eval auc: 0.7359  acc: 0.5077    test auc: 0.7366  acc: 0.5095
+precision: 0.0480	0.0263	0.0166	0.0126	0.0104	0.0081	0.0061	
+recall: 0.0689	0.0886	0.1069	0.1178	0.1271	0.1418	0.1679	
+f1: 0.0565	0.0406	0.0288	0.0228	0.0193	0.0153	0.0117	
+ndcg: 0.0880	0.1021	0.1110	0.1155	0.1188	0.1235	0.1304	
+
+epoch 6    train auc: 0.7631  acc: 0.5222    eval auc: 0.7417  acc: 0.5302    test auc: 0.7424  acc: 0.5330
+precision: 0.0480	0.0265	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0887	0.1061	0.1182	0.1270	0.1412	0.1683	
+f1: 0.0565	0.0408	0.0287	0.0228	0.0193	0.0152	0.0117	
+ndcg: 0.0880	0.1024	0.1108	0.1155	0.1190	0.1232	0.1305	
+
+epoch 7    train auc: 0.7860  acc: 0.5752    eval auc: 0.7453  acc: 0.5725    test auc: 0.7462  acc: 0.5720
+precision: 0.0481	0.0264	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0690	0.0892	0.1061	0.1176	0.1270	0.1414	0.1687	
+f1: 0.0567	0.0408	0.0287	0.0228	0.0194	0.0153	0.0117	
+ndcg: 0.0883	0.1024	0.1109	0.1155	0.1193	0.1233	0.1306	
+
+epoch 8    train auc: 0.8041  acc: 0.6690    eval auc: 0.7477  acc: 0.6444    test auc: 0.7490  acc: 0.6441
+precision: 0.0482	0.0265	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0690	0.0893	0.1061	0.1176	0.1269	0.1412	0.1685	
+f1: 0.0568	0.0408	0.0287	0.0228	0.0194	0.0153	0.0117	
+ndcg: 0.0884	0.1023	0.1110	0.1155	0.1193	0.1233	0.1305	
+
+epoch 9    train auc: 0.8177  acc: 0.7372    eval auc: 0.7499  acc: 0.7036    test auc: 0.7515  acc: 0.7048
+precision: 0.0481	0.0264	0.0166	0.0126	0.0106	0.0081	0.0061	
+recall: 0.0690	0.0891	0.1061	0.1176	0.1279	0.1411	0.1704	
+f1: 0.0567	0.0407	0.0287	0.0228	0.0195	0.0152	0.0118	
+ndcg: 0.0883	0.1024	0.1109	0.1155	0.1194	0.1233	0.1309	
+
+epoch 10    train auc: 0.8279  acc: 0.7468    eval auc: 0.7517  acc: 0.7167    test auc: 0.7536  acc: 0.7188
+precision: 0.0481	0.0264	0.0166	0.0126	0.0106	0.0081	0.0061	
+recall: 0.0690	0.0891	0.1061	0.1176	0.1279	0.1409	0.1709	
+f1: 0.0567	0.0407	0.0287	0.0228	0.0195	0.0152	0.0118	
+ndcg: 0.0883	0.1024	0.1109	0.1155	0.1194	0.1233	0.1308	
+
+epoch 11    train auc: 0.8358  acc: 0.7414    eval auc: 0.7535  acc: 0.7139    test auc: 0.7557  acc: 0.7183
+epoch 12    train auc: 0.8416  acc: 0.7341    eval auc: 0.7550  acc: 0.7095    test auc: 0.7573  acc: 0.7135
+epoch 13    train auc: 0.8459  acc: 0.7324    eval auc: 0.7557  acc: 0.7086    test auc: 0.7582  acc: 0.7122
+epoch 14    train auc: 0.8492  acc: 0.7308    eval auc: 0.7564  acc: 0.7069    test auc: 0.7590  acc: 0.7101
+epoch 15    train auc: 0.8518  acc: 0.7306    eval auc: 0.7568  acc: 0.7068    test auc: 0.7595  acc: 0.7086
+epoch 16    train auc: 0.8539  acc: 0.7323    eval auc: 0.7570  acc: 0.7076    test auc: 0.7598  acc: 0.7096
+epoch 17    train auc: 0.8556  acc: 0.7344    eval auc: 0.7571  acc: 0.7089    test auc: 0.7601  acc: 0.7104
+epoch 18    train auc: 0.8570  acc: 0.7375    eval auc: 0.7572  acc: 0.7092    test auc: 0.7602  acc: 0.7127
+epoch 19    train auc: 0.8583  acc: 0.7394    eval auc: 0.7573  acc: 0.7097    test auc: 0.7603  acc: 0.7137
+
+
+
+
+Namespace(H=1, L=1, batch_size=32, cg_weight=1, dataset='book', debug=True, dim=8, gpu_id='1', kge_interval=3, l2_weight=0.0005, lr_kge=4e-06, lr_rs=4e-05, n_epochs=50, ndcg=False, seed=5)
+reading rating file ...
+Loading datasets splits...
+reading KG file ...
+data loaded.
+epoch 0    train auc: 0.5823  acc: 0.5508    eval auc: 0.5780  acc: 0.5472    test auc: 0.5809  acc: 0.5532
+epoch 1    train auc: 0.6698  acc: 0.5685    eval auc: 0.6743  acc: 0.5788    test auc: 0.6770  acc: 0.5773
+epoch 2    train auc: 0.6967  acc: 0.5209    eval auc: 0.7018  acc: 0.5276    test auc: 0.7038  acc: 0.5316
+epoch 3    train auc: 0.7126  acc: 0.5030    eval auc: 0.7181  acc: 0.5039    test auc: 0.7192  acc: 0.5064
+epoch 4    train auc: 0.7247  acc: 0.5020    eval auc: 0.7285  acc: 0.5013    test auc: 0.7291  acc: 0.5041
+epoch 5    train auc: 0.7410  acc: 0.5025    eval auc: 0.7360  acc: 0.5042    test auc: 0.7365  acc: 0.5058
+precision: 0.0480	0.0264	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0886	0.1067	0.1178	0.1273	0.1413	0.1680	
+f1: 0.0565	0.0407	0.0287	0.0227	0.0193	0.0153	0.0117	
+ndcg: 0.0880	0.1022	0.1109	0.1156	0.1191	0.1234	0.1304	
+
+epoch 6    train auc: 0.7625  acc: 0.5161    eval auc: 0.7418  acc: 0.5225    test auc: 0.7423  acc: 0.5258
+precision: 0.0479	0.0264	0.0166	0.0126	0.0105	0.0080	0.0061	
+recall: 0.0689	0.0886	0.1067	0.1176	0.1274	0.1411	0.1681	
+f1: 0.0565	0.0407	0.0287	0.0228	0.0194	0.0152	0.0117	
+ndcg: 0.0878	0.1021	0.1107	0.1152	0.1190	0.1230	0.1304	
+
+epoch 7    train auc: 0.7855  acc: 0.5720    eval auc: 0.7456  acc: 0.5690    test auc: 0.7462  acc: 0.5683
+precision: 0.0479	0.0265	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0887	0.1061	0.1176	0.1274	0.1413	0.1691	
+f1: 0.0565	0.0409	0.0287	0.0228	0.0194	0.0153	0.0117	
+ndcg: 0.0878	0.1023	0.1106	0.1152	0.1190	0.1231	0.1303	
+
+epoch 8    train auc: 0.8039  acc: 0.6770    eval auc: 0.7482  acc: 0.6529    test auc: 0.7492  acc: 0.6529
+precision: 0.0479	0.0265	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0689	0.0887	0.1061	0.1176	0.1274	0.1413	0.1707	
+f1: 0.0565	0.0409	0.0288	0.0228	0.0194	0.0153	0.0118	
+ndcg: 0.0878	0.1023	0.1106	0.1152	0.1190	0.1231	0.1306	
+
+epoch 9    train auc: 0.8177  acc: 0.7412    eval auc: 0.7504  acc: 0.7101    test auc: 0.7519  acc: 0.7122
+precision: 0.0481	0.0264	0.0166	0.0126	0.0105	0.0081	0.0061	
+recall: 0.0690	0.0892	0.1060	0.1176	0.1267	0.1417	0.1706	
+f1: 0.0567	0.0408	0.0286	0.0228	0.0193	0.0153	0.0119	
+ndcg: 0.0883	0.1024	0.1110	0.1155	0.1190	0.1235	0.1309	
+
+epoch 10    train auc: 0.8279  acc: 0.7450    eval auc: 0.7520  acc: 0.7169    test auc: 0.7539  acc: 0.7183
+precision: 0.0481	0.0264	0.0166	0.0126	0.0106	0.0082	0.0062	
+recall: 0.0690	0.0891	0.1060	0.1176	0.1278	0.1427	0.1710	
+f1: 0.0567	0.0407	0.0286	0.0228	0.0195	0.0154	0.0119	
+ndcg: 0.0883	0.1024	0.1110	0.1155	0.1194	0.1240	0.1309	
+
+epoch 11    train auc: 0.8357  acc: 0.7414    eval auc: 0.7535  acc: 0.7152    test auc: 0.7556  acc: 0.7189
+epoch 12    train auc: 0.8416  acc: 0.7349    eval auc: 0.7549  acc: 0.7098    test auc: 0.7572  acc: 0.7142
+epoch 13    train auc: 0.8459  acc: 0.7317    eval auc: 0.7559  acc: 0.7088    test auc: 0.7583  acc: 0.7115
+epoch 14    train auc: 0.8492  acc: 0.7310    eval auc: 0.7564  acc: 0.7078    test auc: 0.7590  acc: 0.7093
+epoch 15    train auc: 0.8518  acc: 0.7305    eval auc: 0.7568  acc: 0.7067    test auc: 0.7595  acc: 0.7086
+epoch 16    train auc: 0.8539  acc: 0.7324    eval auc: 0.7570  acc: 0.7077    test auc: 0.7598  acc: 0.7103
+epoch 17    train auc: 0.8556  acc: 0.7348    eval auc: 0.7571  acc: 0.7094    test auc: 0.7599  acc: 0.7110
+epoch 18    train auc: 0.8570  acc: 0.7367    eval auc: 0.7573  acc: 0.7095    test auc: 0.7602  acc: 0.7119
+epoch 19    train auc: 0.8583  acc: 0.7392    eval auc: 0.7572  acc: 0.7102    test auc: 0.7602  acc: 0.7132
